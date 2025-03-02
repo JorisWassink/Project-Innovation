@@ -1,0 +1,22 @@
+# Unity generated files
+[Tt]emp/
+[Tt]emp/**
+
+# Unity specific folders
+[Ll]ibrary/
+[Ll]ibrary/**
+
+# Build results
+[Bb]uild/
+[Bb]uilds/
+
+# User-specific files
+[Dd]ebug/
+[Dd]ebugFiles/
+
+# User preferences
+UserSettings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
