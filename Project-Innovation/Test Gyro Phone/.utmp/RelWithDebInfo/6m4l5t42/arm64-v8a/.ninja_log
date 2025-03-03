@@ -1,0 +1,12 @@
+# ninja log v5
+60	655	7626312142469730	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	9afc8b99b936a604
+657	924	7626312145405169	C:/Users/joris/source/repos/Project Innovation/Project-Innovation/Test Gyro Phone/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6m4l5t42/obj/arm64-v8a/libswappywrapper.so	bb71a33de6146198
+34	1900	7626312155145009	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3512eb27d700df0e
+26	1910	7626312155145009	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b0b0e71dd8bba94a
+41	1956	7626312155715851	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	40f01087fdd3c62b
+1	1969	7626312155853871	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	353cdfea2dcd2ed5
+12	2025	7626312156377708	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	df0f6380d4caa712
+49	2048	7626312156611335	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9eb88316a92580a5
+18	2316	7626312159257708	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	7212252fc9a78f04
+7	2458	7626312160726399	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b719655dfc902b90
+2458	2566	7626312161848123	C:/Users/joris/source/repos/Project Innovation/Project-Innovation/Test Gyro Phone/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6m4l5t42/obj/arm64-v8a/libgame.so	3b499a5eae85b735

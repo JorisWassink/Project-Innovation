@@ -1,0 +1,3 @@
+C:\Users\joris\source\repos\Project Innovation\Project-Innovation\Test Gyro Phone\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\joris\source\repos\Project Innovation\Project-Innovation\Test Gyro Phone\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
+C:\Users\joris\source\repos\Project Innovation\Project-Innovation\Test Gyro Phone\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
