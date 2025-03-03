@@ -400,3 +400,115 @@ Received Import Request.
 Start importing Assets/Prefabs/puddle.prefab using Guid(9287b06aaa7bd2847914d5b2c9398d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae5a809fe9705d805e2486b8e2589a7d') in 0.0322486 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 67
 
+========================================================================
+Received Import Request.
+  Time since last request: 202.363134 seconds.
+  path: Assets/Rendering/Materials/Base stone.mat
+  artifactKey: Guid(e754f0acd09527e429b74fd12d790b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rendering/Materials/Base stone.mat using Guid(e754f0acd09527e429b74fd12d790b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b05dbe0de20f790c26a2daff875758ff') in 0.0246946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Rendering/Materials/TEST TEST.mat
+  artifactKey: Guid(bbd362dcb1349824fbb3bef7ae0e59f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rendering/Materials/TEST TEST.mat using Guid(bbd362dcb1349824fbb3bef7ae0e59f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '60a5bedb7b1e2570e640c091f8877a89') in 5.4487927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.667836 seconds.
+  path: Assets/Physics Material/Ice.physicMaterial
+  artifactKey: Guid(853d7e43f42abab4da8c023389843907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Material/Ice.physicMaterial using Guid(853d7e43f42abab4da8c023389843907) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c146145cfc80616d61c7935f48d78fb') in 0.0033574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Physics Material/Poison.physicMaterial
+  artifactKey: Guid(a63117e4b8405054590fb1da81587f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Physics Material/Poison.physicMaterial using Guid(a63117e4b8405054590fb1da81587f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a98c587422f52cf244b83b5b6aec6eb7') in 0.0024133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.736573 seconds.
+  path: Assets/Prefabs/HD shallow stair tile.prefab
+  artifactKey: Guid(973a121df75bbbf45b613c4ba01184dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HD shallow stair tile.prefab using Guid(973a121df75bbbf45b613c4ba01184dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a916147727647bc64ab1cccc61d7027') in 0.0388183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 239
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.797518 seconds.
+  path: Assets/Prefabs/shallow stair tile.prefab
+  artifactKey: Guid(973a121df75bbbf45b613c4ba01184dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/shallow stair tile.prefab using Guid(973a121df75bbbf45b613c4ba01184dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d88187361d5bada7a7831a33ead2c39') in 0.0322077 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 239
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.343739 seconds.
+  path: Assets/Prefabs/steep stair tile.prefab
+  artifactKey: Guid(e96b6065d47fdc84584243eb78892935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/steep stair tile.prefab using Guid(e96b6065d47fdc84584243eb78892935) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1aaa0cca86fe768200d5ef6160eac949') in 0.0409975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 440
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.818434 seconds.
+  path: Assets/Prefabs/broken floor tile.prefab
+  artifactKey: Guid(753588ead7b8d944da1b2201fb037f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/broken floor tile.prefab using Guid(753588ead7b8d944da1b2201fb037f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e18e3c4f95b964e2ff62a82124655adc') in 0.0328409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 220.218166 seconds.
+  path: Assets/Rendering/Materials/Lineart.mat
+  artifactKey: Guid(d370434770e700d42b6dabe5f160b000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rendering/Materials/Lineart.mat using Guid(d370434770e700d42b6dabe5f160b000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90f5e7cce0c793a87472e88890c761f4') in 0.0245513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.188570 seconds.
+  path: Assets/Prefabs/broken floor tile.prefab
+  artifactKey: Guid(753588ead7b8d944da1b2201fb037f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/broken floor tile.prefab using Guid(753588ead7b8d944da1b2201fb037f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e52e22ecced6ad72fd9da6ec5f7fe41') in 0.0361937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Prefabs/square pillar.prefab
+  artifactKey: Guid(4a71b9eb60a1b6545b840306c7da80fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/square pillar.prefab using Guid(4a71b9eb60a1b6545b840306c7da80fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6abdde193883730ab38beee462699bcd') in 0.0351244 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 51
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Prefabs/shallow stair tile.prefab
+  artifactKey: Guid(973a121df75bbbf45b613c4ba01184dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/shallow stair tile.prefab using Guid(973a121df75bbbf45b613c4ba01184dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ba3ff607e52150d136906308b733a79') in 0.0428407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 239
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Prefabs/steep stair tile.prefab
+  artifactKey: Guid(e96b6065d47fdc84584243eb78892935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/steep stair tile.prefab using Guid(e96b6065d47fdc84584243eb78892935) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08c177cf1af9d90d9771a9205e750172') in 0.0452279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 440
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Prefabs/puddle.prefab
+  artifactKey: Guid(9287b06aaa7bd2847914d5b2c9398d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/puddle.prefab using Guid(9287b06aaa7bd2847914d5b2c9398d63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42484a84c0108e208cad777f0e5d85c6') in 0.0342859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 67
+

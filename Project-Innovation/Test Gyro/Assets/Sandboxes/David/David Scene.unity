@@ -687,6 +687,10 @@ PrefabInstance:
       value: HD steep stair tile
       objectReference: {fileID: 0}
     - target: {fileID: 8966877263818898930, guid: e96b6065d47fdc84584243eb78892935, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966877263818898930, guid: e96b6065d47fdc84584243eb78892935, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.12999988
       objectReference: {fileID: 0}
@@ -696,7 +700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8966877263818898930, guid: e96b6065d47fdc84584243eb78892935, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.8960495
+      value: -4.186
       objectReference: {fileID: 0}
     - target: {fileID: 8966877263818898930, guid: e96b6065d47fdc84584243eb78892935, type: 3}
       propertyPath: m_LocalRotation.w
@@ -740,6 +744,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5083444518354583303, guid: 973a121df75bbbf45b613c4ba01184dc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1497
+      objectReference: {fileID: 0}
+    - target: {fileID: 5083444518354583303, guid: 973a121df75bbbf45b613c4ba01184dc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.14310253
       objectReference: {fileID: 0}
@@ -749,7 +757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5083444518354583303, guid: 973a121df75bbbf45b613c4ba01184dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.038
+      value: -4.0394
       objectReference: {fileID: 0}
     - target: {fileID: 5083444518354583303, guid: 973a121df75bbbf45b613c4ba01184dc, type: 3}
       propertyPath: m_LocalRotation.w
