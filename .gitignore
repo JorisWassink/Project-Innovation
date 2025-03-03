@@ -6,6 +6,9 @@
 [Ll]ibrary/
 [Ll]ibrary/**
 
+[Ll]ogs/
+[Ll]ogs/**
+
 # Build results
 [Bb]uild/
 [Bb]uilds/
