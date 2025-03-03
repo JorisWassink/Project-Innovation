@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.CompilerSymbols", "Mirror.CompilerSymbols.csproj", "{525d082d-96a5-b7a0-fc89-034f08ad34d7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{c4890c69-c055-b525-7a28-2e7a250b3edf}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +68,8 @@ Global
 		{69a24cf2-fb44-67ca-1628-0e9eb93d1fa6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{525d082d-96a5-b7a0-fc89-034f08ad34d7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{525d082d-96a5-b7a0-fc89-034f08ad34d7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c4890c69-c055-b525-7a28-2e7a250b3edf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c4890c69-c055-b525-7a28-2e7a250b3edf}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
