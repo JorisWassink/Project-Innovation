@@ -57,8 +57,8 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _lighting_cutoff: 0.3
-    - _shadow_brightness: 0.69
+    - _lighting_cutoff: 0.27
+    - _shadow_brightness: 0.74
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _Shadow_Color: {r: 0.39215684, g: 0.6923389, b: 1, a: 0}
