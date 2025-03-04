@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Poison.cs" />
     <Compile Include="Assets\Scripts\Ice.cs" />
     <Compile Include="Assets\Sandboxes\Joris\movingPlatformTest.cs" />
+    <Compile Include="Assets\Sandboxes\Justin\TiltScript.cs" />
     <Compile Include="Assets\DebugScript.cs" />
   </ItemGroup>
   <ItemGroup>

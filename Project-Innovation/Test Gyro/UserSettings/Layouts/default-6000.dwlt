@@ -69,8 +69,8 @@ MonoBehaviour:
     y: 0
     width: 354.40002
     height: 716.8
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 289.6
     height: 410.4
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 50
+  controlID: 40
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -1444,7 +1444,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sandboxes/Joris
+    - Assets/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sandboxes/Joris
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Justin\Desktop\wa\Project-Innovation\Project-Innovation\Project-Innovation\Test
     Gyro
@@ -1462,9 +1462,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 19}
-    m_SelectedIDs: 78bb0000
-    m_LastClickedID: 47992
-    m_ExpandedIDs: 00000000d6ba00003ebb000000ca9a3bffffff7f
+    m_SelectedIDs: 0eb40000
+    m_LastClickedID: 46094
+    m_ExpandedIDs: 0000000028b200000ab4000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1493,7 +1493,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d6ba0000
+    m_ExpandedIDs: 0000000028b20000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1639,9 +1639,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0a810000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5ee9ffff60bc0000ccbc0000
+      m_ExpandedIDs: 24e6ffff48be0000b4be0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2161,9 +2161,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 58.32321, y: -79.180435, z: 68.84638}
+    m_Target: {x: -36.212982, y: -70.188095, z: -78.31735}
     speed: 2
-    m_Value: {x: 58.32321, y: -79.180435, z: 68.84638}
+    m_Value: {x: -36.212982, y: -70.188095, z: -78.31735}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2209,13 +2209,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.3254778, y: 0.3306462, z: -0.121242955, w: 0.8778876}
+    m_Target: {x: 0.11108123, y: -0.8877889, z: 0.30390862, w: 0.32825196}
     speed: 2
-    m_Value: {x: 0.32508036, y: 0.33264416, z: -0.12198414, w: 0.8768069}
+    m_Value: {x: 0.11104692, y: -0.88751465, z: 0.30381474, w: 0.32815057}
   m_Size:
-    m_Target: 67.96179
+    m_Target: 68.27882
     speed: 2
-    m_Value: 13.641734
+    m_Value: 68.27882
   m_Ortho:
     m_Target: 0
     speed: 2

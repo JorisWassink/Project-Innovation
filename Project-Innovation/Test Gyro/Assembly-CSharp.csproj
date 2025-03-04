@@ -70,6 +70,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Ice.cs" />
     <Compile Include="Assets\Sandboxes\Joris\movingPlatformTest.cs" />
+    <Compile Include="Assets\Sandboxes\Justin\TiltScript.cs" />
     <Compile Include="Assets\resetPos.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
   </ItemGroup>
