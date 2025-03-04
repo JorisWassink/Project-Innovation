@@ -19,8 +19,6 @@ public class GyroReceiver : MonoBehaviour {
         receiveThread = new Thread(ReceiveData);
         receiveThread.IsBackground = true;
         receiveThread.Start();
-
-        // You may not need Rigidbody here since we are rotating the parent object directly
     }
 
     void ReceiveData() {

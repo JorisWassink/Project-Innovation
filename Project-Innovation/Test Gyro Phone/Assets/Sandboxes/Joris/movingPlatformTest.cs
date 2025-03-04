@@ -3,61 +3,87 @@ using Mirror;
 
 public class MovingPlatformTest : NetworkBehaviour
 {
+    public Transform cameraTransform; // Assign in Inspector
+    public Transform ballTransform;   // Assign in Inspector
+    public float rotationSpeed = 500f;
+    public float cameraFollowSpeed = 5f;
+    public float tiltSmoothing = 5f;  // Smooths out the tilting
+
+    private Vector3 receivedGyro;
+    private Vector3 accumulatedRotation;
+    private Quaternion initialGyroRotation;
+
     private void Start()
     {
-        // Only enable gyroscope on the local player (phone)
         if (!isLocalPlayer) return;
 
         if (SystemInfo.supportsGyroscope)
         {
-            Input.gyro.enabled = true;  // Enable the gyroscope if it's supported
+            Input.gyro.enabled = true;
+            initialGyroRotation = GyroToUnity(Input.gyro.attitude); // Store initial calibration
         }
         else
         {
-            Debug.LogError("Gyroscoop wordt niet ondersteund op dit apparaat!");
+            Debug.LogError("Gyroscope not supported on this device!");
         }
     }
 
     private void Update()
     {
-        
-        // If this isn't the local player, or gyroscope isn't enabled, do nothing
         if (!isLocalPlayer) return;
 
-        // Use the gyroscope data to adjust the rotation
-        CmdUpdateRotation(GyroToUnity(Input.gyro.attitude));
+        Quaternion rawGyro = GyroToUnity(Input.gyro.attitude);
+        Quaternion relativeRotation = Quaternion.Inverse(initialGyroRotation) * rawGyro; // Normalize to start position
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            transform.position += Vector3.up;
-        }
+        receivedGyro = relativeRotation.eulerAngles;
+
+        // Send rotation update to server
+        CmdUpdateRotation(relativeRotation);
     }
 
     private Quaternion GyroToUnity(Quaternion q)
     {
-        // Convert the gyroscope values to Unity's coordinate system
+        // Convert phone gyro orientation to Unity space
         return new Quaternion(q.x, q.y, -q.z, -q.w);
     }
 
-    // Command: Called by the client (phone) to tell the server to update the rotation
     [Command]
     private void CmdUpdateRotation(Quaternion newRotation)
     {
-        // Update the rotation on the server
         transform.rotation = newRotation;
-
-        // Tell all clients to update the rotation (including the phone)
         RpcUpdateRotation(newRotation);
     }
 
-    // ClientRpc: Called by the server to update all clients (including the phone)
     [ClientRpc]
     private void RpcUpdateRotation(Quaternion newRotation)
     {
-        // Update the rotation on all clients except the local player (who already updated it)
         if (!isLocalPlayer)
         {
             transform.rotation = newRotation;
         }
+    }
+
+    private void FixedUpdate()
+    {
+        if (cameraTransform == null || ballTransform == null) return;
+
+        // === 1. Rotate the Maze around the Ball's Position ===
+        Vector3 cameraRight = cameraTransform.right;
+        Vector3 cameraForward = Vector3.Cross(cameraRight, Vector3.up);
+
+        // Use gyro data to adjust rotation around the ball
+        Vector3 tiltDirection = (-receivedGyro.x * cameraRight) + (-receivedGyro.y * cameraForward);
+
+        // Apply accumulated rotation with smoothing
+        accumulatedRotation = Vector3.Lerp(accumulatedRotation, accumulatedRotation + (tiltDirection * rotationSpeed * Time.fixedDeltaTime), tiltSmoothing * Time.fixedDeltaTime);
+
+        // Rotate around the ball's position
+        transform.RotateAround(ballTransform.position, cameraRight, -receivedGyro.x * rotationSpeed * Time.fixedDeltaTime);
+        transform.RotateAround(ballTransform.position, cameraForward, -receivedGyro.y * rotationSpeed * Time.fixedDeltaTime);
+
+        // === 2. Smooth Camera Follow ===
+        Vector3 targetPosition = ballTransform.position + new Vector3(0, 5, -5);
+        cameraTransform.position = Vector3.Lerp(cameraTransform.position, targetPosition, cameraFollowSpeed * Time.fixedDeltaTime);
+        cameraTransform.LookAt(ballTransform.position);
     }
 }
