@@ -2392,9 +2392,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 873284205904099599}
-  - component: {fileID: 6764728226705300058}
   - component: {fileID: 9184355049589633274}
   - component: {fileID: 3962835433985287791}
+  - component: {fileID: 7749693168069000493}
   m_Layer: 0
   m_Name: Parent
   m_TagString: Untagged
@@ -2487,25 +2487,6 @@ Transform:
   - {fileID: 470840666383526512}
   m_Father: {fileID: 5507034055410122508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6764728226705300058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3453362358301565606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09342baba9c34e74f8e6a7ed9dfc5d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  cameraTransform: {fileID: 4217472269009246078}
-  ballTransform: {fileID: 760462800222934296}
-  rotationSpeed: 500
-  cameraFollowSpeed: 5
 --- !u!64 &9184355049589633274
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2555,6 +2536,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7749693168069000493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3453362358301565606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa0a4809a1cc754fbb4fecf5b5e61b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  rotationSpeed: 500
+  tiltSmoothing: 5
+  cameraTransform: {fileID: 4217472269009246078}
+  ballTransform: {fileID: 760462800222934296}
+  playerNumber: 0
 --- !u!1 &3619052066649376017
 GameObject:
   m_ObjectHideFlags: 0

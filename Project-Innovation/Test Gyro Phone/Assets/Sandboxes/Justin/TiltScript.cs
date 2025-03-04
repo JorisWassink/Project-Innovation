@@ -1,8 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
 public class TiltScript : NetworkBehaviour
 {
+    static readonly List<TiltScript> playersList = new List<TiltScript>();
+    public event System.Action<byte> OnPlayerNumberChanged;
+
     [SyncVar] private Vector3 receivedGyro; // Sync gyro data across clients
     private Vector3 accumulatedRotation;
 
@@ -12,7 +16,47 @@ public class TiltScript : NetworkBehaviour
     public Transform ballTransform;   // Assign in Inspector
 
     private Quaternion initialGyroRotation;
+    
+    [Header("SyncVars")]
 
+
+    [SyncVar(hook = nameof(PlayerNumberChanged))]
+    public byte playerNumber = 0;
+
+    
+    void PlayerNumberChanged(byte _, byte newPlayerNumber)
+    {
+        OnPlayerNumberChanged?.Invoke(newPlayerNumber);
+    }
+    /// <summary>
+    /// This is invoked for NetworkBehaviour objects when they become active on the server.
+    /// <para>This could be triggered by NetworkServer.Listen() for objects in the scene, or by NetworkServer.Spawn() for objects that are dynamically created.</para>
+    /// <para>This will be called for objects on a "host" as well as for object on a dedicated server.</para>
+    /// </summary>
+    public override void OnStartServer()
+    {
+        base.OnStartServer();
+
+        // Add this to the static Players List
+        playersList.Add(this);
+
+    }
+    
+    // This is called from BasicNetManager OnServerAddPlayer and OnServerDisconnect
+    // Player numbers are reset whenever a player joins / leaves
+    [ServerCallback]
+    internal static void ResetPlayerNumbers()
+    {
+        byte playerNumber = 0;
+        foreach (TiltScript player in playersList)
+            player.playerNumber = playerNumber++;
+    }
+    
+    public override void OnStopServer()
+    {
+        playersList.Remove(this);
+    }
+    
     private void Start()
     {
         if (!isLocalPlayer) return;
