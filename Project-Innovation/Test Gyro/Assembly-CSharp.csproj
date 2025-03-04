@@ -48,13 +48,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GyroReciever.cs" />
     <Compile Include="Assets\Scripts\Poison.cs" />
+    <Compile Include="Assets\Cannon.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Boulder.cs" />
     <Compile Include="Assets\Scripts\Ice.cs" />
     <Compile Include="Assets\Sandboxes\Joris\movingPlatformTest.cs" />
     <Compile Include="Assets\Sandboxes\Justin\TiltScript.cs" />
     <Compile Include="Assets\BasicNetManager.cs" />
     <Compile Include="Assets\resetPos.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Spring.cs" />
     <None Include="Assets\Mirror\version.txt" />
     <None Include="Assets\Mirror\Readme.txt" />
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />
