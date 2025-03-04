@@ -25,8 +25,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionTransportEditor",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telepathy", "Telepathy.csproj", "{a43f25b7-ac1b-ae90-2f76-22a17c96f45d}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{ae984b89-0e70-c6fb-ffbf-f451c36ca744}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{69a24cf2-fb44-67ca-1628-0e9eb93d1fa6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.CompilerSymbols", "Mirror.CompilerSymbols.csproj", "{525d082d-96a5-b7a0-fc89-034f08ad34d7}"
@@ -62,8 +60,6 @@ Global
 		{05eecedd-1fd5-70c9-27cc-db6e05b89ea1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a43f25b7-ac1b-ae90-2f76-22a17c96f45d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a43f25b7-ac1b-ae90-2f76-22a17c96f45d}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ae984b89-0e70-c6fb-ffbf-f451c36ca744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ae984b89-0e70-c6fb-ffbf-f451c36ca744}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69a24cf2-fb44-67ca-1628-0e9eb93d1fa6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{69a24cf2-fb44-67ca-1628-0e9eb93d1fa6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{525d082d-96a5-b7a0-fc89-034f08ad34d7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
