@@ -338,6 +338,7 @@ Total: 11.080800 ms (FindLiveObjects: 0.991100 ms CreateObjectMapping: 0.835900 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
@@ -396,3 +397,5 @@ Memory consumption went from 148.5 MB to 143.6 MB.
 Total: 18.750000 ms (FindLiveObjects: 1.295800 ms CreateObjectMapping: 1.113500 ms MarkObjects: 11.647100 ms  DeleteObjects: 4.689300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+=======
+>>>>>>> Stashed changes
