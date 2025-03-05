@@ -46,11 +46,11 @@ namespace Mirror.Examples.Basic
                     case 2:
                         if (i == 0)
                         {
-                            playersList[i].cameraTransform.GetComponent<Camera>().rect = new Rect(0, 0, .5f, 1);
+                            playersList[i].cameraTransform.GetComponent<Camera>().rect = new Rect(0, 0, 1, .5f);
                         }
                         else
                         {
-                            playersList[i].cameraTransform.GetComponent<Camera>().rect = new Rect(.5f, 0, .5f, 1);
+                            playersList[i].cameraTransform.GetComponent<Camera>().rect = new Rect(0, .5f, 1, .5f);
                         }
                         break;
                     case 3:
