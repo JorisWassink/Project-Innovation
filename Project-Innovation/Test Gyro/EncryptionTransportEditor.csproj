@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
@@ -1138,23 +1138,23 @@
       <Name>Mirror.Transports</Name>
     </ProjectReference>
     <ProjectReference Include="kcp2k.csproj">
-      <Project>{e8bda9dc-27c7-05f1-5de6-d4d603d1c36d}</Project>
+      <Project>{DCA9BDE8-C727-F105-5DE6-D4D603D1C36D}</Project>
       <Name>kcp2k</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.csproj">
-      <Project>{fddd1031-c41f-4b38-6d4c-1954af4120d3}</Project>
+      <Project>{3110DDFD-1FC4-384B-6D4C-1954AF4120D3}</Project>
       <Name>Mirror</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.CompilerSymbols.csproj">
-      <Project>{ace9a81d-d7f7-be5b-f6aa-0414a702fb52}</Project>
+      <Project>{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}</Project>
       <Name>Mirror.CompilerSymbols</Name>
     </ProjectReference>
     <ProjectReference Include="SimpleWebTransport.csproj">
-      <Project>{0a081b80-6158-d5a8-8069-def574c49531}</Project>
+      <Project>{801B080A-5861-A8D5-8069-DEF574C49531}</Project>
       <Name>SimpleWebTransport</Name>
     </ProjectReference>
     <ProjectReference Include="Telepathy.csproj">
-      <Project>{48c88686-19c6-20c2-8109-be51529ce800}</Project>
+      <Project>{8686C848-C619-C220-8109-BE51529CE800}</Project>
       <Name>Telepathy</Name>
     </ProjectReference>
   </ItemGroup>

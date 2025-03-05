@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
@@ -1168,7 +1168,7 @@
       <Name>Mirror</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.CompilerSymbols.csproj">
-      <Project>{ace9a81d-d7f7-be5b-f6aa-0414a702fb52}</Project>
+      <Project>{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}</Project>
       <Name>Mirror.CompilerSymbols</Name>
     </ProjectReference>
   </ItemGroup>
