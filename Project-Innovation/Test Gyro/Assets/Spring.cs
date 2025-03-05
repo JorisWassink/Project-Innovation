@@ -11,7 +11,7 @@ public class Spring : MonoBehaviour
             Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.velocity = new Vector3(rb.velocity.x, bounceForce, rb.velocity.z);
+                rb.linearVelocity = new Vector3(rb.linearVelocity.x, bounceForce, rb.linearVelocity.z);
                 Debug.Log("Boulder bounced!");
             }
         }
