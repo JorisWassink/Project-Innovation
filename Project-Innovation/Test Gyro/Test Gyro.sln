@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 
+=======
+﻿
+>>>>>>> Stashed changes
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mirror.CodeGen", "Unity.Mirror.CodeGen.csproj", "{6F57ADD9-2D6E-E378-6E0C-D3CA21348EC8}"
@@ -12,6 +16,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Examples", "Mirror.Examples.csproj", "{3CAA6E4C-DFCE-F7B7-061D-D573D72BBA39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kcp2k", "kcp2k.csproj", "{DCA9BDE8-C727-F105-5DE6-D4D603D1C36D}"
+<<<<<<< Updated upstream
 EndProject
 <<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror", "Mirror.csproj", "{3110DDFD-1FC4-384B-6D4C-1954AF4120D3}"
@@ -40,6 +45,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.CompilerSymbols", "M
 =======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.CompilerSymbols", "Mirror.CompilerSymbols.csproj", "{ace9a81d-d7f7-be5b-f6aa-0414a702fb52}"
 >>>>>>> Stashed changes
+=======
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror", "Mirror.csproj", "{3110DDFD-1FC4-384B-6D4C-1954AF4120D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebTransport", "SimpleWebTransport.csproj", "{801B080A-5861-A8D5-8069-DEF574C49531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Authenticators", "Mirror.Authenticators.csproj", "{D531BD7B-8F7A-D1BA-55A4-422C36132CFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Transports", "Mirror.Transports.csproj", "{F8825EAF-4757-A20D-E23B-39C1EF35BA49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionTransportEditor", "EncryptionTransportEditor.csproj", "{30B90CE7-64C8-5125-F664-C3CCAAAEFA77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telepathy", "Telepathy.csproj", "{8686C848-C619-C220-8109-BE51529CE800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{644F2D0B-1AFF-B95F-D31C-2C803C67C541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.CompilerSymbols", "Mirror.CompilerSymbols.csproj", "{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}"
+>>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +73,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 		{6F57ADD9-2D6E-E378-6E0C-D3CA21348EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F57ADD9-2D6E-E378-6E0C-D3CA21348EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F57ADD9-2D6E-E378-6E0C-D3CA21348EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -108,6 +136,7 @@ Global
 		{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< Updated upstream
 =======
 		{d9ad576f-6e2d-78e3-6e0c-d3ca21348ec8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{d9ad576f-6e2d-78e3-6e0c-d3ca21348ec8}.Debug|Any CPU.Build.0 = Debug|Any CPU
@@ -139,6 +168,8 @@ Global
 		{0b2d4f64-ff1a-5fb9-d31c-2c803c67c541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ace9a81d-d7f7-be5b-f6aa-0414a702fb52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ace9a81d-d7f7-be5b-f6aa-0414a702fb52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
