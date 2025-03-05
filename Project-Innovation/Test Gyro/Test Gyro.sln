@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
@@ -7,8 +8,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mirror.CodeGen", "Uni
 <<<<<<< Updated upstream
 
 =======
+=======
+>>>>>>> origin/main
 ﻿
->>>>>>> Stashed changes
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mirror.CodeGen", "Unity.Mirror.CodeGen.csproj", "{6F57ADD9-2D6E-E378-6E0C-D3CA21348EC8}"
@@ -26,6 +28,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kcp2k", "kcp2k.csproj", "{e8bda9dc-27c7-05f1-5de6-d4d603d1c36d}"
 =======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kcp2k", "kcp2k.csproj", "{DCA9BDE8-C727-F105-5DE6-D4D603D1C36D}"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 >>>>>>> origin/main
 EndProject
@@ -50,6 +53,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.CompilerSymbols", "M
 =======
 >>>>>>> Stashed changes
 =======
+=======
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}"
+>>>>>>> origin/main
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror", "Mirror.csproj", "{3110DDFD-1FC4-384B-6D4C-1954AF4120D3}"
 EndProject
@@ -65,10 +72,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telepathy", "Telepathy.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{644F2D0B-1AFF-B95F-D31C-2C803C67C541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.CompilerSymbols", "Mirror.CompilerSymbols.csproj", "{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}"
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
 EndProject
 Global
@@ -77,11 +85,14 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> origin/main
 		{6F57ADD9-2D6E-E378-6E0C-D3CA21348EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F57ADD9-2D6E-E378-6E0C-D3CA21348EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F57ADD9-2D6E-E378-6E0C-D3CA21348EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -106,6 +117,10 @@ Global
 		{DCA9BDE8-C727-F105-5DE6-D4D603D1C36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCA9BDE8-C727-F105-5DE6-D4D603D1C36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCA9BDE8-C727-F105-5DE6-D4D603D1C36D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3110DDFD-1FC4-384B-6D4C-1954AF4120D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3110DDFD-1FC4-384B-6D4C-1954AF4120D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3110DDFD-1FC4-384B-6D4C-1954AF4120D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -134,14 +149,11 @@ Global
 		{644F2D0B-1AFF-B95F-D31C-2C803C67C541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{644F2D0B-1AFF-B95F-D31C-2C803C67C541}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{644F2D0B-1AFF-B95F-D31C-2C803C67C541}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DA8E9AC-F7D7-5BBE-F6AA-0414A702FB52}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 >>>>>>> origin/main
@@ -180,6 +192,8 @@ Global
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
