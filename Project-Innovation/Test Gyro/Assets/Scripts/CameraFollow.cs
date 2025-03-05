@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour {
         // Smoothly move the camera to follow the ball
         transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
 
-        // Keep the camera at the original fixed rotation
+        // Keep the camera at the original fixed rotation   
         transform.rotation = fixedRotation;
     }
 }

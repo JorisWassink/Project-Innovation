@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
+using Unity.VisualScripting;
 
 public class TiltScript : NetworkBehaviour
 {
-    static readonly List<TiltScript> playersList = new List<TiltScript>();
+    public static readonly List<TiltScript> playersList = new List<TiltScript>();
     public event System.Action<byte> OnPlayerNumberChanged;
 
     [SyncVar] private Vector3 receivedGyro; // Sync gyro data across clients
@@ -14,36 +15,25 @@ public class TiltScript : NetworkBehaviour
     public float tiltSmoothing = 5f; // Smooth tilt transitions
     public Transform cameraTransform; // Assign in Inspector
     public Transform ballTransform;   // Assign in Inspector
+    public float moveSpeed = 5f; // Movement speed when spacebar is pressed
 
     private Quaternion initialGyroRotation;
-    
+
     [Header("SyncVars")]
-
-
     [SyncVar(hook = nameof(PlayerNumberChanged))]
     public byte playerNumber = 0;
 
-    
     void PlayerNumberChanged(byte _, byte newPlayerNumber)
     {
         OnPlayerNumberChanged?.Invoke(newPlayerNumber);
     }
-    /// <summary>
-    /// This is invoked for NetworkBehaviour objects when they become active on the server.
-    /// <para>This could be triggered by NetworkServer.Listen() for objects in the scene, or by NetworkServer.Spawn() for objects that are dynamically created.</para>
-    /// <para>This will be called for objects on a "host" as well as for object on a dedicated server.</para>
-    /// </summary>
+
     public override void OnStartServer()
     {
         base.OnStartServer();
-
-        // Add this to the static Players List
         playersList.Add(this);
-
     }
-    
-    // This is called from BasicNetManager OnServerAddPlayer and OnServerDisconnect
-    // Player numbers are reset whenever a player joins / leaves
+
     [ServerCallback]
     internal static void ResetPlayerNumbers()
     {
@@ -51,12 +41,12 @@ public class TiltScript : NetworkBehaviour
         foreach (TiltScript player in playersList)
             player.playerNumber = playerNumber++;
     }
-    
+
     public override void OnStopServer()
     {
         playersList.Remove(this);
     }
-    
+
     private void Start()
     {
         if (!isLocalPlayer) return;
@@ -74,15 +64,30 @@ public class TiltScript : NetworkBehaviour
 
     private void Update()
     {
+        Debug.Log($"Is Local Player{isLocalPlayer}");
         if (!isLocalPlayer) return;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Space Pressed");
+            var t = this.transform.position;
+            t.y += 100f;
+            this.transform.position = t;
+        }
 
         // Get normalized gyro rotation
         Quaternion rawGyro = GyroToUnity(Input.gyro.attitude);
         Quaternion relativeRotation = Quaternion.Inverse(initialGyroRotation) * rawGyro;
         Vector3 gyroEuler = relativeRotation.eulerAngles;
 
+        // Log the gyro data to ensure it's working
+        Debug.Log("Gyroscope Euler: " + gyroEuler);
+
         // Send gyro data to server
         CmdSendGyroData(gyroEuler);
+
+        // Check for spacebar press and move the ball
+        
     }
 
     private Quaternion GyroToUnity(Quaternion q)
@@ -111,14 +116,18 @@ public class TiltScript : NetworkBehaviour
         Vector3 cameraRight = cameraTransform.right;
         Vector3 cameraForward = Vector3.Cross(cameraRight, Vector3.up); // Flattened forward
 
-        // Convert received gyro data to world-space tilting
+        // Scale and smooth the tilt data
         Vector3 tiltDirection = (-receivedGyro.x * cameraRight) + (-receivedGyro.y * cameraForward);
 
-        // Accumulate rotation smoothly
+        // Debug logs
+        Debug.Log("Received Gyro: " + receivedGyro);  // Log gyro data
+        Debug.Log("Tilt Direction: " + tiltDirection);  // Log tilt direction
+
+        // Smooth the accumulated rotation for a more natural transition
         accumulatedRotation = Vector3.Lerp(accumulatedRotation, accumulatedRotation + tiltDirection * rotationSpeed * Time.fixedDeltaTime, tiltSmoothing * Time.fixedDeltaTime);
 
-        // Rotate maze **around the ball’s position**
-        transform.RotateAround(ballTransform.position, cameraRight, -receivedGyro.x * rotationSpeed * Time.fixedDeltaTime);
-        transform.RotateAround(ballTransform.position, cameraForward, -receivedGyro.y * rotationSpeed * Time.fixedDeltaTime);
+        // Apply rotation smoothly **around the ball’s position**
+        transform.RotateAround(ballTransform.position, cameraRight, accumulatedRotation.x);
+        transform.RotateAround(ballTransform.position, cameraForward, accumulatedRotation.y);
     }
 }
