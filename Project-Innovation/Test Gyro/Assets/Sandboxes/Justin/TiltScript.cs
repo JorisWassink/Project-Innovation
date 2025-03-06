@@ -49,6 +49,8 @@ public class TiltScript : NetworkBehaviour
 
     private void Start()
     {
+        Debug.Log($"Player object started. isLocalPlayer: {isLocalPlayer}");
+
         if (!isLocalPlayer) return;
 
         if (SystemInfo.supportsGyroscope)
