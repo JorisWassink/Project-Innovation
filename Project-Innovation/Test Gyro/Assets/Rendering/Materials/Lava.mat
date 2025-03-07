@@ -42,12 +42,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Highlight_brightness: 0.798
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _highlight: 1
     - _lighting_cutoff: -0.3
     - _shadow_brightness: 0.43
     m_Colors:
-    - _Color: {r: 1, g: 0.6997094, b: 0.3679244, a: 0}
+    - _Color: {r: 1, g: 0.58535165, b: 0.13396227, a: 0}
+    - _Highlight_Color: {r: 0.5245282, g: 0.4903398, b: 0.14548235, a: 0}
     - _Shadow_Color: {r: 1, g: 0.4433962, b: 0.4433962, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
