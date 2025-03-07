@@ -6,6 +6,7 @@ public class KeyboardControls : MonoBehaviour
     public float tiltSmoothing = 5f; // Smooth tilt transitions
     public Transform cameraTransform; // Assign in Inspector
     public Transform ballTransform;   // Assign in Inspector
+    public Rigidbody rb;              // Assign in Inspector
 
     private Vector3 targetRotation;
 
@@ -23,23 +24,19 @@ public class KeyboardControls : MonoBehaviour
 
         // Convert input to world-space tilting
         targetRotation = (-tiltX * cameraRight) + (-tiltY * cameraForward);
-        
     }
 
     private void FixedUpdate()
     {
-        if (cameraTransform == null || ballTransform == null) return;
-
-        Vector3 cameraRight = cameraTransform.right;
-        Vector3 cameraForward = cameraTransform.forward;
-        cameraForward.y = 0; 
-        cameraForward.Normalize();
+        if (cameraTransform == null || ballTransform == null || rb == null) return;
 
         // Smooth transition of tilt direction
         Vector3 smoothedRotation = Vector3.Lerp(Vector3.zero, targetRotation * rotationSpeed, tiltSmoothing * Time.fixedDeltaTime);
 
-        // Apply rotation
-        transform.RotateAround(ballTransform.position, cameraRight, -smoothedRotation.x * Time.fixedDeltaTime);
-        transform.RotateAround(ballTransform.position, cameraForward, smoothedRotation.z * Time.fixedDeltaTime);
+        // Calculate the desired rotation quaternion based on smoothed rotation
+        Quaternion deltaRotation = Quaternion.Euler(-smoothedRotation.x * Time.fixedDeltaTime, 0, smoothedRotation.z * Time.fixedDeltaTime);
+
+        // Apply the rotation to the Rigidbody using MoveRotation
+        rb.MoveRotation(rb.rotation * deltaRotation);
     }
 }

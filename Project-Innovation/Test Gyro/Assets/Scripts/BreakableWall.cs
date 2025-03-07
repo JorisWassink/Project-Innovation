@@ -20,7 +20,7 @@ public class BreakableWall : MonoBehaviour
             }
             else
             {
-                Debug.Log($"Vertical impact speed {verticalSpeed} too low to break the wall.");
+//                Debug.Log($"Vertical impact speed {verticalSpeed} too low to break the wall.");
             }
         }
     }
