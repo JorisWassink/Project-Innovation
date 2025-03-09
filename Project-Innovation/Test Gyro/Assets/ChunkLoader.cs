@@ -8,9 +8,7 @@ public class ChunkPlacer : MonoBehaviour
 {
     public Transform Player;
     private Chunk[] Chunks;
-    public Chunk FirstChunk;
     private List<Chunk> _spawnedChunks = new List<Chunk>();
-    private HashSet<int> _spawnedChunkIDs = new HashSet<int>();
     
     [SerializeField] private int outerRadius;
     [SerializeField] private int innerRadius;
@@ -23,7 +21,6 @@ public class ChunkPlacer : MonoBehaviour
         foreach (var chunk in Chunks)
         {
             _spawnedChunks.Add(chunk);
-            _spawnedChunkIDs.Add(chunk.ID);
         }
     }
 
@@ -35,27 +32,33 @@ public class ChunkPlacer : MonoBehaviour
         {
             foreach (Chunk chunk in Chunks)
             {
+                
+
+            
+                // Get the chunk's world position
+                Vector3 chunkWorldPosition = transform.TransformPoint(chunk.transform.localPosition);
+
+                // Calculate the absolute X and Z distance between the player and the chunk
+                //float distanceX = Mathf.Abs(Player.position.x - chunkWorldPosition.x);
+                //float distanceZ = Mathf.Abs(Player.position.z - chunkWorldPosition.z);
                 float distanceX = Mathf.Abs(Player.position.x - (transform.TransformPoint(chunk.transform.localPosition)).x);
-                float distanceY = Mathf.Abs(Player.position.y - (transform.TransformPoint(chunk.transform.localPosition)).y);
+                float distanceZ = Mathf.Abs(Player.position.z - (transform.TransformPoint(chunk.transform.localPosition)).z);
 
 
                 
-                if ((distanceX < innerRadius && distanceY < innerRadius) && !_spawnedChunkIDs.Contains(chunk.ID))
+                if ((distanceX < innerRadius && distanceZ < innerRadius) && !_spawnedChunks.Contains(chunk))
                 {
-                    SpawnChunk(chunk); // Return after SpawnChunk completes
-                    Debug.Log($"spawned chunk {chunk.ID} at {distanceX}, {distanceY}");
+                    SpawnChunk(chunk); 
+                    Debug.Log($"spawned chunk {chunk.ID} at {distanceX}, {distanceZ}");
                 }
-                else if ((distanceX > outerRadius || distanceY > outerRadius) &&  _spawnedChunkIDs.Contains(chunk.ID))
+                else if ((distanceX > outerRadius || distanceZ > outerRadius) &&  _spawnedChunks.Contains(chunk))
                 {
                     DeleteChunk(chunk);
-                    Debug.Log($"destroyed chunk {chunk.ID} at {distanceX}, {distanceY}");
-
+                    Debug.Log($"destroyed chunk {chunk.ID} at {distanceX}, {distanceZ}");
                 }
-                
             }
-
             // Prevent this from checking every single frame
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.4f);
         }
     }
 
@@ -64,19 +67,17 @@ public class ChunkPlacer : MonoBehaviour
     {
         chunk.gameObject.SetActive(true);
         _spawnedChunks.Add(chunk);
-        _spawnedChunkIDs.Add(chunk.ID);
-        
     }
 
     private void DeleteChunk(Chunk chunk)
     {
         chunk.gameObject.SetActive(false);
         _spawnedChunks.Remove(chunk);
-        _spawnedChunkIDs.Remove(chunk.ID);  
-        
     }
+    
+    
 
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         foreach (Chunk chunk in Chunks)
         {
@@ -95,7 +96,7 @@ public class ChunkPlacer : MonoBehaviour
             // Draw the line from the player to the chunk's world position
             Debug.DrawLine(Player.position, worldPosition, Color.green);
         }
-    }
+    }*/
 
 
 }
