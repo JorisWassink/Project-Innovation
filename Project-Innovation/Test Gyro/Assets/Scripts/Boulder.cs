@@ -8,9 +8,11 @@ using System.Threading;
 public class Boulder : MonoBehaviour
 {
     [SerializeField] private float boosterStrength = 50f;
-    [SerializeField] private float boulderSpeed = 5f;
+    [SerializeField] private float boulderSpeed = 50f;
     [SerializeField] private float tiltSmoothing = 5f; // Smooth tilt transitions
+    [SerializeField] private float maxSpeed = 10f; // Max speed cap
     [SerializeField] private Transform cameraTransform; // Assign in Inspector
+    [SerializeField] private float drag = 1f; // Drag to slow the ball
     private Vector3 targetForce;
     private Rigidbody rb;
 
@@ -24,6 +26,9 @@ public class Boulder : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        // Apply drag to the Rigidbody to allow natural slowing
+        rb.linearDamping = drag;
 
         // Start UDP listener for gyro data
         udpClient = new UdpClient(port);
@@ -60,12 +65,10 @@ public class Boulder : MonoBehaviour
         if (cameraTransform == null) return;
 
         // Gyro tilt data (assuming phone is flat-facing up, adjust axis if needed)
+        // Normalize gyro values (convert degrees to a small range)
         float tiltX = Mathf.Repeat(-receivedGyro.x, 360f) / 360f * 2f - 1f; 
         float tiltY = Mathf.Repeat(receivedGyro.y, 360f) / 360f * 2f - 1f; 
 
-        // Clamp tilt values to a range that makes sense for ball control
-        tiltX = Mathf.Clamp(tiltX, -1f, 1f);
-        tiltY = Mathf.Clamp(tiltY, -1f, 1f);
 
         // Get camera-aligned right and forward directions
         Vector3 cameraRight = cameraTransform.right;
@@ -77,16 +80,24 @@ public class Boulder : MonoBehaviour
         cameraRight.y = 0;
         cameraRight.Normalize();
 
-        // Adjust movement force (make it more controllable)
+        // Convert gyro input to world-space movement
         Vector3 desiredForce = (cameraForward * tiltX + cameraRight * tiltY) * boulderSpeed;
-        targetForce = Vector3.Lerp(targetForce, desiredForce, tiltSmoothing * Time.deltaTime);
 
+        // Smoothly transition the force to make it feel more controlled
+        targetForce = Vector3.Lerp(targetForce, desiredForce, tiltSmoothing * Time.deltaTime);
     }
 
     private void FixedUpdate()
     {
         if (rb == null) return;
 
+        // Limit speed to the maxSpeed to prevent the ball from accelerating too much
+        if (rb.linearVelocity.magnitude > maxSpeed)
+        {
+            rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
+        }
+
+        // Apply the target force
         if (targetForce != Vector3.zero)
         {
             rb.AddForce(targetForce, ForceMode.Force);
