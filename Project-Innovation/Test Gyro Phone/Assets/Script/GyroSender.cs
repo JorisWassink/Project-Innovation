@@ -6,7 +6,7 @@ using System.Text;
 public class GyroSender : MonoBehaviour
 {
     private UdpClient udpClient;
-    public string pcIP = "192.168.1.100"; // Replace with your PC's local IP
+    public string pcIP = "145.76.216.210"; // Replace with your PC's local IP
     public int port = 6060; // Match this with the PC's UDP receiver port
 
     private Quaternion initialRotation;
