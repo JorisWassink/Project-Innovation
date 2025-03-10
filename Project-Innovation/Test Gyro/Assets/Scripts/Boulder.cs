@@ -60,8 +60,12 @@ public class Boulder : MonoBehaviour
         if (cameraTransform == null) return;
 
         // Gyro tilt data (assuming phone is flat-facing up, adjust axis if needed)
-        float tiltX = -receivedGyro.x; // Tilting forward/backward
-        float tiltY = -receivedGyro.y; // Tilting left/right
+        float tiltX = Mathf.Repeat(-receivedGyro.x, 360f) / 360f * 2f - 1f; 
+        float tiltY = Mathf.Repeat(receivedGyro.y, 360f) / 360f * 2f - 1f; 
+
+        // Clamp tilt values to a range that makes sense for ball control
+        tiltX = Mathf.Clamp(tiltX, -1f, 1f);
+        tiltY = Mathf.Clamp(tiltY, -1f, 1f);
 
         // Get camera-aligned right and forward directions
         Vector3 cameraRight = cameraTransform.right;
@@ -73,9 +77,10 @@ public class Boulder : MonoBehaviour
         cameraRight.y = 0;
         cameraRight.Normalize();
 
-        // Convert gyro input to world-space movement
+        // Adjust movement force (make it more controllable)
         Vector3 desiredForce = (cameraForward * tiltX + cameraRight * tiltY) * boulderSpeed;
         targetForce = Vector3.Lerp(targetForce, desiredForce, tiltSmoothing * Time.deltaTime);
+
     }
 
     private void FixedUpdate()
@@ -84,7 +89,8 @@ public class Boulder : MonoBehaviour
 
         if (targetForce != Vector3.zero)
         {
-            rb.AddForce(targetForce, ForceMode.Acceleration);
+            rb.AddForce(targetForce, ForceMode.Force);
+            Debug.Log($"Gyro Force Applied: {targetForce}");
         }
     }
 
