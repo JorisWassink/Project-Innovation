@@ -51,8 +51,8 @@
     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\NetworkMetricsModel.cs" />
     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerManagedReleaseCreate.cs" />
     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseConfigResponse.cs" />
-    <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MetricsResponse.cs" />
     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\AppVersionUpdatePatchData.cs" />
+    <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MetricsResponse.cs" />
     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\CreateDeploymentResult.cs" />
     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionWhitelistEntry.cs" />
     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\EdgegapApiBase.cs" />
