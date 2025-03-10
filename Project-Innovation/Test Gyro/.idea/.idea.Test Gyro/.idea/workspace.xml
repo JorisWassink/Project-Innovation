@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccefc92b-d0eb-4a13-a8f0-a1d1f6980f00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ChunkLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ChunkLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chunks/Levelchunk 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chunks/Levelchunk 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chunks/Levelchunk 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chunks/Levelchunk 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chunks/Levelchunk 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chunks/Levelchunk 3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chunks/Levelchunk.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chunks/Levelchunk.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boulder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boulder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Edgegap.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Edgegap.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EncryptionTransportEditor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EncryptionTransportEditor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Authenticators.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Authenticators.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.CompilerSymbols.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.CompilerSymbols.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Components.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Components.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Examples.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Examples.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Transports.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Transports.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleWebTransport.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleWebTransport.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telepathy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Telepathy.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test Gyro.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Test Gyro.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity.Mirror.CodeGen.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.Mirror.CodeGen.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandboxes/Joris/Scenes/LoadingScenes.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandboxes/Joris/Scenes/LoadingScenes.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kcp2k.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/kcp2k.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +105,7 @@
       <workItem from="1741185843619" duration="1451000" />
       <workItem from="1741253398952" duration="1205000" />
       <workItem from="1741339009546" duration="13507000" />
-      <workItem from="1741516705052" duration="8728000" />
+      <workItem from="1741516705052" duration="9077000" />
     </task>
     <servers />
   </component>
