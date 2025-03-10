@@ -1,47 +1,81 @@
 using System;
 using UnityEngine;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
 
 public class Boulder : MonoBehaviour
 {
     [SerializeField] private float boosterStrength = 50f;
     [SerializeField] private float boulderSpeed = 5f;
-    [SerializeField] private float rotationSpeed = 500f;
     [SerializeField] private float tiltSmoothing = 5f; // Smooth tilt transitions
     [SerializeField] private Transform cameraTransform; // Assign in Inspector
     private Vector3 targetForce;
     private Rigidbody rb;
 
+    // UDP variables
+    private UdpClient udpClient;
+    private Thread receiveThread;
+    private Vector3 receivedGyro;
+
+    public int port = 6060; // Set this to your UDP port
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        // Start UDP listener for gyro data
+        udpClient = new UdpClient(port);
+        receiveThread = new Thread(ReceiveData);
+        receiveThread.IsBackground = true;
+        receiveThread.Start();
     }
+
+    private void ReceiveData()
+    {
+        while (true)
+        {
+            try
+            {
+                IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Any, port);
+                byte[] data = udpClient.Receive(ref remoteEndPoint);
+                string message = Encoding.UTF8.GetString(data);
+                string[] values = message.Split(',');
+
+                if (values.Length == 3)
+                {
+                    receivedGyro = new Vector3(float.Parse(values[0]), float.Parse(values[1]), float.Parse(values[2]));
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("UDP Error: " + e.Message);
+            }
+        }
+    }
+
     private void Update()
     {
         if (cameraTransform == null) return;
 
-        // Get input from arrow keys or WASD
-        float tiltX = Input.GetAxis("Vertical");   // W/S or Up/Down
-        float tiltY = Input.GetAxis("Horizontal"); // A/D or Left/Right
+        // Gyro tilt data (assuming phone is flat-facing up, adjust axis if needed)
+        float tiltX = -receivedGyro.x; // Tilting forward/backward
+        float tiltY = -receivedGyro.y; // Tilting left/right
 
-        // Get the camera-aligned right and forward directions
+        // Get camera-aligned right and forward directions
         Vector3 cameraRight = cameraTransform.right;
         Vector3 cameraForward = cameraTransform.forward;
-        
+
         cameraForward.y = 0; 
         cameraForward.Normalize();
-        
+
         cameraRight.y = 0;
         cameraRight.Normalize();
 
-        // Convert input to world-space movement
-        targetForce = (cameraForward * tiltX + cameraRight * tiltY) * boulderSpeed;
-
-        // Reduce drift when no input is given
-        if (tiltX == 0 && tiltY == 0)
-        {
-            targetForce = Vector3.zero;
-        }
+        // Convert gyro input to world-space movement
+        Vector3 desiredForce = (cameraForward * tiltX + cameraRight * tiltY) * boulderSpeed;
+        targetForce = Vector3.Lerp(targetForce, desiredForce, tiltSmoothing * Time.deltaTime);
     }
 
     private void FixedUpdate()
@@ -53,7 +87,6 @@ public class Boulder : MonoBehaviour
             rb.AddForce(targetForce, ForceMode.Acceleration);
         }
     }
-    
 
     private void OnCollisionEnter(Collision other)
     {
@@ -62,9 +95,15 @@ public class Boulder : MonoBehaviour
             SpeedBoost(other.transform.forward);
         }
     }
-    
-    private void SpeedBoost(Vector3 Direction)
+
+    private void SpeedBoost(Vector3 direction)
     {
-        rb.AddForce(Direction * boosterStrength, ForceMode.Impulse);
+        rb.AddForce(direction * boosterStrength, ForceMode.Impulse);
+    }
+
+    private void OnApplicationQuit()
+    {
+        receiveThread?.Abort();
+        udpClient?.Close();
     }
 }
