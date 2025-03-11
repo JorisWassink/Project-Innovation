@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Base stone
   m_Shader: {fileID: -6465566751694194690, guid: 502a096258f52024cb3c1e39ccb4335e, type: 3}
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 2100000, guid: 1b080802919206a429438de30d9f199f, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -38,32 +38,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: 5e248f9ee2f71b54491d97004e7bbb38, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats:
-    - _Highlight_brightness: 0.841
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    - _highlight: 0
-    - _lighting_cutoff: 0.27
-    - _shadow_brightness: 0.74
-    m_Colors:
-    - _Color: {r: 0.6225976, g: 0.7283019, b: 0.53179777, a: 0}
-    - _Highlight_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _Shadow_Color: {r: 0.39215684, g: 0.6923389, b: 1, a: 0}
+    m_Floats: []
+    m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
