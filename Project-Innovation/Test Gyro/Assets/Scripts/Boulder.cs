@@ -1,9 +1,4 @@
-using System;
 using UnityEngine;
-using System.Net;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading;
 
 public class Boulder : MonoBehaviour
 {
@@ -14,73 +9,71 @@ public class Boulder : MonoBehaviour
     private Vector3 targetForce;
     private Rigidbody rb;
 
-    // UDP variables
-    private UdpClient udpClient;
-    private Thread receiveThread;
-    private Vector3 receivedGyro;
-
-    public int port = 6060; // Set this to your UDP port
+    // Scale the gyroscope values to prevent excessive force
+    [SerializeField] private float gyroSensitivity = 0.1f;  // Add a sensitivity multiplier to reduce force
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
-        // Start UDP listener for gyro data
-        udpClient = new UdpClient(port);
-        receiveThread = new Thread(ReceiveData);
-        receiveThread.IsBackground = true;
-        receiveThread.Start();
-    }
-
-    private void ReceiveData()
-    {
-        while (true)
+        // Enable gyroscope
+        if (SystemInfo.supportsGyroscope)
         {
-            try
-            {
-                IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Any, port);
-                byte[] data = udpClient.Receive(ref remoteEndPoint);
-                string message = Encoding.UTF8.GetString(data);
-                string[] values = message.Split(',');
-
-                if (values.Length == 3)
-                {
-                    receivedGyro = new Vector3(float.Parse(values[0]), float.Parse(values[1]), float.Parse(values[2]));
-                }
-            }
-            catch (Exception e)
-            {
-                Debug.LogError("UDP Error: " + e.Message);
-            }
+            Input.gyro.enabled = true;
+            Debug.Log("Gyroscope enabled.");
+        }
+        else
+        {
+            Debug.LogError("Gyroscope not supported!");
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (cameraTransform == null) return;
 
-        // Gyro tilt data (assuming phone is flat-facing up, adjust axis if needed)
-        float tiltX = Mathf.Repeat(-receivedGyro.x, 360f) / 360f * 2f - 1f; 
-        float tiltY = Mathf.Repeat(receivedGyro.y, 360f) / 360f * 2f - 1f; 
+        // Get phone gyro rotation
+        Quaternion gyroRotation = Input.gyro.attitude;
 
-        // Clamp tilt values to a range that makes sense for ball control
-        tiltX = Mathf.Clamp(tiltX, -1f, 1f);
-        tiltY = Mathf.Clamp(tiltY, -1f, 1f);
+        // Debug log to see raw gyro rotation data
+        Debug.Log($"Gyro Rotation: {gyroRotation}");
 
-        // Get camera-aligned right and forward directions
-        Vector3 cameraRight = cameraTransform.right;
-        Vector3 cameraForward = cameraTransform.forward;
+        // Convert gyro input to angles (Euler angles)
+        Vector3 gyroEuler = gyroRotation.eulerAngles;
 
-        cameraForward.y = 0; 
+        // Debug log to see the converted angles
+        Debug.Log($"Gyro Euler Angles: {gyroEuler}");
+
+        // Normalize gyro values for tilt (mapping them to a range from -1 to 1)
+        float tiltX = Mathf.Repeat(-gyroEuler.x, 360f) / 360f * 2f - 1f;
+        float tiltY = Mathf.Repeat(-gyroEuler.y, 360f) / 360f * 2f - 1f;
+
+        // Debug logs for tilt values
+        Debug.Log($"Tilt X: {tiltX}, Tilt Y: {tiltY}");
+
+        // Manually define the camera's right and forward directions for a top-down view
+        Vector3 cameraRight = cameraTransform.right; // X-axis direction
+        Vector3 cameraForward = cameraTransform.forward; // Z-axis direction
+
+        cameraForward.y = 0;
         cameraForward.Normalize();
 
         cameraRight.y = 0;
         cameraRight.Normalize();
 
-        // Adjust movement force (make it more controllable)
-        Vector3 desiredForce = (cameraForward * tiltX + cameraRight * tiltY) * boulderSpeed;
+        // Debug log for camera directions
+        Debug.Log($"Camera Forward: {cameraForward}, Camera Right: {cameraRight}");
+
+        // Apply gyro sensitivity to scale down the force
+        float adjustedTiltX = tiltX * gyroSensitivity;
+        float adjustedTiltY = tiltY * gyroSensitivity;
+
+        // Convert gyro input to world-space movement with adjusted sensitivity
+        Vector3 desiredForce = (cameraForward * adjustedTiltY + cameraRight * adjustedTiltX) * boulderSpeed;
         targetForce = Vector3.Lerp(targetForce, desiredForce, tiltSmoothing * Time.deltaTime);
 
+        // Debug log for target force applied
+        Debug.Log($"Desired Force: {desiredForce}, Target Force: {targetForce}");
     }
 
     private void FixedUpdate()
@@ -90,26 +83,14 @@ public class Boulder : MonoBehaviour
         if (targetForce != Vector3.zero)
         {
             rb.AddForce(targetForce, ForceMode.Force);
-            Debug.Log($"Gyro Force Applied: {targetForce}");
+            // Debug log for force applied to the rigidbody
+            Debug.Log($"Force Applied to Rigidbody: {targetForce}");
         }
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("SpeedBooster"))
-        {
-            SpeedBoost(other.transform.forward);
-        }
-    }
-
-    private void SpeedBoost(Vector3 direction)
-    {
-        rb.AddForce(direction * boosterStrength, ForceMode.Impulse);
     }
 
     private void OnApplicationQuit()
     {
-        receiveThread?.Abort();
-        udpClient?.Close();
+        Input.gyro.enabled = false;
+        Debug.Log("Gyroscope disabled.");
     }
 }
