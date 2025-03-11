@@ -148,7 +148,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.027127743, y: 0.22463179, z: 4.9364514}
-  m_LocalScale: {x: 9.87, y: 0.49, z: 0.18}
+  m_LocalScale: {x: 9.87, y: 2.32, z: 0.18}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 557285705}
@@ -381,7 +381,6 @@ GameObject:
   - component: {fileID: 577086763}
   - component: {fileID: 577086762}
   - component: {fileID: 577086766}
-  - component: {fileID: 577086768}
   - component: {fileID: 577086767}
   m_Layer: 0
   m_Name: Sphere
@@ -505,7 +504,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 1
 --- !u!114 &577086767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,26 +518,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boosterStrength: 50
-  boulderSpeed: 50
+  boulderSpeed: 10
   tiltSmoothing: 5
   cameraTransform: {fileID: 846356270}
---- !u!114 &577086768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 577086760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 2212398292
-  _assetId: 0
-  serverOnly: 0
-  visibility: 0
-  hasSpawned: 0
+  port: 6060
+  gyroScaling: 0.05
 --- !u!1 &846356267
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +703,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -4.9528723, y: 0.22463179, z: 0.06645131}
-  m_LocalScale: {x: 9.87, y: 0.49, z: 0.17999999}
+  m_LocalScale: {x: 9.87, y: 2.32, z: 0.17999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 557285705}
@@ -827,7 +811,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.027127743, y: 0.22463179, z: -4.8855486}
-  m_LocalScale: {x: 9.87, y: 0.49, z: 0.18}
+  m_LocalScale: {x: 9.87, y: 2.32, z: 0.18}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 557285705}
@@ -935,7 +919,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 4.847128, y: 0.22463179, z: 0.06645131}
-  m_LocalScale: {x: 9.87, y: 0.49, z: 0.17999999}
+  m_LocalScale: {x: 9.87, y: 2.32, z: 0.17999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 557285705}
