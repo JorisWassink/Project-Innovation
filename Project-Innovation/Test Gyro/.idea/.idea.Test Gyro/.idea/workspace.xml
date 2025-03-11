@@ -4,46 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccefc92b-d0eb-4a13-a8f0-a1d1f6980f00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Edgegap.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Edgegap.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/EncryptionTransportEditor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/EncryptionTransportEditor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Authenticators.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Authenticators.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.CompilerSymbols.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.CompilerSymbols.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Components.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Components.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Examples.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Examples.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Transports.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Transports.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/SimpleWebTransport.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/SimpleWebTransport.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Telepathy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Telepathy.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Test Gyro Phone.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Test Gyro Phone.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Unity.Mirror.CodeGen.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Unity.Mirror.CodeGen.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/kcp2k.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/kcp2k.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Bounce Plant.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Bounce Plant.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boulder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boulder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spring.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spring.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Edgegap.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Edgegap.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EncryptionTransportEditor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EncryptionTransportEditor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Authenticators.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Authenticators.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.CompilerSymbols.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.CompilerSymbols.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Components.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Components.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Examples.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Examples.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.Transports.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Transports.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mirror.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleWebTransport.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleWebTransport.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telepathy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Telepathy.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test Gyro.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Test Gyro.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unity.Mirror.CodeGen.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.Mirror.CodeGen.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kcp2k.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/kcp2k.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="ccefc92b-d0eb-4a13-a8f0-a1d1f6980f00" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,14 +14,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Chunk.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ChunkLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mirror/Core/NetworkManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Mirror/Editor/NetworkInformationPreview.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PlayerAnimator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mirror/Editor/NetworkInformationPreview.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerAnimator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sandboxes/Joris/CollectibleManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sandboxes/Joris/KeyboardControls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sandboxes/Joris/movingPlatformTest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sandboxes/Justin/TiltScript.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Boulder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BreakableWall.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spring.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@0b68ece7aa54/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@afc42d8f5d23/Editor/Data/Graphs/SerializableTexture.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -75,18 +41,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "FearDrivenBackup",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Unity.exe" />
