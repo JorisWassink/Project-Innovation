@@ -10,6 +10,7 @@ public class Boulder : MonoBehaviour
     [SerializeField] private float boosterStrength = 50f;
     [SerializeField] private float boulderSpeed = 5f;
     [SerializeField] private float tiltSmoothing = 5f; // Smooth tilt transitions
+    private float normalDrag; // Store default drag
     [SerializeField] private Transform cameraTransform; // Assign in Inspector
     private Vector3 targetForce;
     private Rigidbody rb;
@@ -27,6 +28,7 @@ public class Boulder : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        normalDrag = rb.linearDamping; // Save initial drag value
 
         // Start UDP listener for gyro data
         udpClient = new UdpClient(port);
@@ -109,6 +111,26 @@ public class Boulder : MonoBehaviour
     {
         rb.AddForce(direction * boosterStrength, ForceMode.Impulse);
     }
+
+private void OnTriggerEnter(Collider other)
+{
+    if (other.gameObject.CompareTag("Ice"))
+    {
+        rb.linearDamping = 0.1f; // Reduce drag for sliding effect
+    }
+    else if (other.gameObject.CompareTag("Mud"))
+    {
+        rb.linearDamping = 5f; // Increase drag for mud
+    }
+}
+
+private void OnTriggerExit(Collider other)
+{
+    if (other.gameObject.CompareTag("Ice") || other.gameObject.CompareTag("Mud"))
+    {
+        rb.linearDamping = normalDrag; // Reset drag when leaving
+    }
+}
 
     private void OnApplicationQuit()
     {
