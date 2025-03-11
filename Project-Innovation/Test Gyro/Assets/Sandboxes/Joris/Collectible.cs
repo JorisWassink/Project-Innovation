@@ -1,4 +1,6 @@
-public class Collectible
+using UnityEngine;
+
+public class Collectible: MonoBehaviour
 {
     public int ID { get; private set; }
     public string Name { get; private set; }
