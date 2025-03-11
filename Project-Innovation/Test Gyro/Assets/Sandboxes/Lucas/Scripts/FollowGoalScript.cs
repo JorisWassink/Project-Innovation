@@ -19,36 +19,31 @@ public class FollowGoalScipt : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Goal 1"))
+        switch (other.tag)
         {
-            goal1hit = true;
-            other.gameObject.SetActive(false);
-            Arrow.GetComponent<Renderer>().enabled = false;
-            aimarrow.SetTimer();
-            Debug.Log("goal1hit");
-            diamond1.SetActive(true);
+           case "Goal 1": 
+               GoalReached(diamond1);
+               goal1hit = true;
+                break;
+           case "Goal 2":
+               GoalReached(diamond2);
+               goal2hit = true;
+               break;
+           case "Goal 3":
+               GoalReached(diamond3);
+               goal3hit = true;
+               break;
+           case "Button":
+               changelayoutscript.LayoutChanged();
+               break;
         }
-        else if (other.CompareTag("Goal 2"))
-        {
-            goal2hit = true;
-            other.gameObject.SetActive(false);
-            Arrow.GetComponent<Renderer>().enabled = false;
-            aimarrow.SetTimer();
-            Debug.Log("goal2hit");
-            diamond2.SetActive(true);
-        }
-        else if (other.CompareTag("Goal 3"))
-        {
-            goal3hit = true;
-            other.gameObject.SetActive(false);
-            Arrow.GetComponent<Renderer>().enabled = false;
-            aimarrow.SetTimer();
-            Debug.Log("goal3hit");
-            diamond3.SetActive(true);
-        }
-        else if (other.CompareTag("Button"))
-        {
-            changelayoutscript.LayoutChanged();
-        }
+    }
+
+    private void GoalReached(GameObject diamond)
+    {
+        diamond.gameObject.SetActive(false);
+        Arrow.GetComponent<Renderer>().enabled = false;
+        aimarrow.SetTimer();
+        diamond.SetActive(true);
     }
 }

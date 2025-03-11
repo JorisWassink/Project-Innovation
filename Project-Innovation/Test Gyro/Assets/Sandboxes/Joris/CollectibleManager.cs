@@ -5,7 +5,7 @@ public class CollectibleManager : MonoBehaviour
 {
     public static CollectibleManager Instance { get; private set; }
 
-    private List<Collectible> collectibles = new List<Collectible>();
+    private List<Collectible> collectibles;
 
     private void Awake()
     {
