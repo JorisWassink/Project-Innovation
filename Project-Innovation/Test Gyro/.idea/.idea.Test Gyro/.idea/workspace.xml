@@ -5,25 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccefc92b-d0eb-4a13-a8f0-a1d1f6980f00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Edgegap.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Edgegap.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/EncryptionTransportEditor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/EncryptionTransportEditor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Authenticators.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Authenticators.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.CompilerSymbols.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.CompilerSymbols.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Components.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Components.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Examples.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Examples.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Transports.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.Transports.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Mirror.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/SimpleWebTransport.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/SimpleWebTransport.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Telepathy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Telepathy.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Test Gyro Phone.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Test Gyro Phone.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/Unity.Mirror.CodeGen.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/Unity.Mirror.CodeGen.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Gyro Phone/kcp2k.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Gyro Phone/kcp2k.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestingScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestingScene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Edgegap.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Edgegap.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/EncryptionTransportEditor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/EncryptionTransportEditor.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.Authenticators.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.Authenticators.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.CompilerSymbols.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.CompilerSymbols.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.Components.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.Components.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.Editor.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.Examples.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.Examples.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.Transports.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.Transports.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/SimpleWebTransport.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SimpleWebTransport.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Telepathy.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Telepathy.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/kcp2k.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/kcp2k.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Bounce Plant.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Bounce Plant.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boulder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boulder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spring.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spring.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Edgegap.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Edgegap.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EncryptionTransportEditor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EncryptionTransportEditor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mirror.Authenticators.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Authenticators.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mirror.CompilerSymbols.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.CompilerSymbols.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mirror.Components.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Components.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mirror.Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mirror.Examples.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Examples.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mirror.Transports.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.Transports.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mirror.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mirror.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleWebTransport.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleWebTransport.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telepathy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Telepathy.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Gyro.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Test Gyro.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unity.Mirror.CodeGen.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Unity.Mirror.CodeGen.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kcp2k.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/kcp2k.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +145,7 @@
       <workItem from="1741339009546" duration="13507000" />
       <workItem from="1741516705052" duration="9077000" />
       <workItem from="1741683120098" duration="928000" />
-      <workItem from="1741684131530" duration="5123000" />
+      <workItem from="1741684131530" duration="7689000" />
     </task>
     <servers />
   </component>

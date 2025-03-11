@@ -3,7 +3,12 @@ using UnityEngine;
 public class Spring : MonoBehaviour
 {
     public float bounceForce = 10f; // Pas dit aan voor de gewenste kracht
+    private Animator animator;
 
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("boulder"))
@@ -13,8 +18,14 @@ public class Spring : MonoBehaviour
             if (rb != null)
             {
                 rb.linearVelocity = new Vector3(rb.linearVelocity.x, bounceForce, rb.linearVelocity.z);
+                animator.SetTrigger("Bounce");
                 Debug.Log("Boulder bounced!");
             }
         }
+    }
+    
+    public void OnAnimationComplete()
+    {
+        animator.ResetTrigger("Bounce");
     }
 }
