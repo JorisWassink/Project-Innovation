@@ -10,7 +10,6 @@ public class Boulder : MonoBehaviour
     [SerializeField] private float boosterStrength = 50f;
     [SerializeField] private float boulderSpeed = 5f;
     [SerializeField] private float tiltSmoothing = 5f; // Smooth tilt transitions
-    [SerializeField] private float maxSpeed = 5f; // Max speed cap
     [SerializeField] private Transform cameraTransform; // Assign in Inspector
     private Vector3 targetForce;
     private Rigidbody rb;
@@ -88,12 +87,6 @@ public class Boulder : MonoBehaviour
     private void FixedUpdate()
     {
         if (rb == null) return;
-
-        // Limit speed to the maxSpeed to prevent the ball from accelerating too much
-        if (rb.linearVelocity.magnitude > maxSpeed)
-        {
-            rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
-        }
 
         // Apply the force to the ball if it's not zero
         if (targetForce != Vector3.zero)
