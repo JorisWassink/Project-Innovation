@@ -169,10 +169,10 @@ PrefabInstance:
       addedObject: {fileID: 7677585380349531555}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d3ce269ebf95d0a4db2ead5ab4462961, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1900004007518738161}
+      addedObject: {fileID: 1666462419583504086}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d3ce269ebf95d0a4db2ead5ab4462961, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1666462419583504086}
+      addedObject: {fileID: 9137220206480366994}
   m_SourcePrefab: {fileID: 100100000, guid: d3ce269ebf95d0a4db2ead5ab4462961, type: 3}
 --- !u!1 &1606003743370516310 stripped
 GameObject:
@@ -201,8 +201,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!64 &1900004007518738161
-MeshCollider:
+--- !u!114 &1666462419583504086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606003743370516310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f439b85aeee1b214496a77d26f3590d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 10
+--- !u!65 &9137220206480366994
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -219,20 +232,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
---- !u!114 &1666462419583504086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606003743370516310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f439b85aeee1b214496a77d26f3590d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce: 10
+  serializedVersion: 3
+  m_Size: {x: 2.48, y: 2.04, z: 2.51}
+  m_Center: {x: -0.36, y: 0.69, z: 0.19}

@@ -34,15 +34,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1976799d1af40e34a9c53c9844591a0e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.665
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1976799d1af40e34a9c53c9844591a0e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.81
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1976799d1af40e34a9c53c9844591a0e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.0005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1976799d1af40e34a9c53c9844591a0e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -110,7 +110,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 871adcf8d9dbee342b664fa250f726c4, type: 2}
     - target: {fileID: 919132149155446097, guid: 1976799d1af40e34a9c53c9844591a0e, type: 3}
       propertyPath: m_Name
-      value: innovation character
+      value: Player Character
       objectReference: {fileID: 0}
     - target: {fileID: 2985478084322739907, guid: 1976799d1af40e34a9c53c9844591a0e, type: 3}
       propertyPath: m_Materials.Array.size

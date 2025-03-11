@@ -8,6 +8,7 @@ public class Spring : MonoBehaviour
     {
         if (other.gameObject.CompareTag("boulder"))
         {
+            Debug.Log("Bounce");
             Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
