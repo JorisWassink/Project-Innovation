@@ -8,11 +8,12 @@ TagManager:
   - boulder
   - SpeedBooster
   - Collectible
+  - IgnoreChunking
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wall
   - Water
   - UI
   - 
