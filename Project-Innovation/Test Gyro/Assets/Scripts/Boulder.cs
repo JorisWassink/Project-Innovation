@@ -142,6 +142,11 @@ public class Boulder : MonoBehaviour
             currentDrag = mudDrag; // Apply mud drag (slow movement)
             FindFirstObjectByType<audioManager>().Play("MudSound");
         }
+        if (other.gameObject.CompareTag("SpeedBooster"))
+        {
+            SpeedBoost(other.transform.forward);
+            FindFirstObjectByType<audioManager>().Play("speedBoost");
+        }
     }
 
     private void OnTriggerExit(Collider other)
