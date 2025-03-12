@@ -99,25 +99,18 @@ public class Boulder : MonoBehaviour
         // Apply ice drag: Reduced friction sliding effect
         if (currentDrag == iceDrag)
         {
-<<<<<<< Updated upstream
-            rb.AddForce(targetForce, ForceMode.Force);
-            Debug.Log($"Gyro Force Applied: {targetForce}");
-            FindFirstObjectByType<audioManager>().Play("playerMovement");
+            // Apply the ice sliding effect by modifying the velocity instead of adding force
             newVelocity *= 1f / (1f + Time.deltaTime * 5f); // Reduced friction sliding effect
-=======
-            // Reduce speed gradually for ice effect
-            newVelocity *= 1f / (1f + Time.deltaTime * 5f);
->>>>>>> Stashed changes
         }
         // Apply mud drag: Increased friction to slow down
         else if (currentDrag == mudDrag)
         {
-            // Reduce speed even further for mud effect
-            newVelocity *= 0.5f;
+            // Apply mud slowdown effect
+            newVelocity *= 0.5f; // Slower movement in mud
         }
 
         // Set the new velocity, while maintaining the y-axis velocity (gravity or jumping)
-        newVelocity.y = rb.linearVelocity.y;
+        newVelocity.y = rb.linearVelocity.y; // Retain the vertical velocity (gravity)
         rb.linearVelocity = newVelocity;
 
         Debug.Log($"Gyro Force Applied: {newVelocity}");
@@ -146,14 +139,8 @@ public class Boulder : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Mud"))
         {
-<<<<<<< Updated upstream
-            rb.linearDamping = 3f; // Increase drag for mud
-            FindFirstObjectByType<audioManager>().Play("MudSound");
-            currentDrag = mudDrag; // Apply mud drag (slow movement)
-=======
             currentDrag = mudDrag; // Apply mud drag (slow movement)
             FindFirstObjectByType<audioManager>().Play("MudSound");
->>>>>>> Stashed changes
         }
     }
 
