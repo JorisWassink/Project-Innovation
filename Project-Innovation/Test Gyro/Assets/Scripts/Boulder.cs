@@ -96,18 +96,24 @@ public class Boulder : MonoBehaviour
         // Apply the velocity directly, including the effects of ice or mud
         Vector3 newVelocity = targetForce;
 
-        // If the object is on ice, apply sliding drag (reduce drag)
+        // Apply ice drag: Reduced friction sliding effect
         if (currentDrag == iceDrag)
         {
+<<<<<<< Updated upstream
             rb.AddForce(targetForce, ForceMode.Force);
             Debug.Log($"Gyro Force Applied: {targetForce}");
             FindFirstObjectByType<audioManager>().Play("playerMovement");
             newVelocity *= 1f / (1f + Time.deltaTime * 5f); // Reduced friction sliding effect
+=======
+            // Reduce speed gradually for ice effect
+            newVelocity *= 1f / (1f + Time.deltaTime * 5f);
+>>>>>>> Stashed changes
         }
-        // If the object is in mud, apply extra drag (slow down)
+        // Apply mud drag: Increased friction to slow down
         else if (currentDrag == mudDrag)
         {
-            newVelocity *= 0.5f; // Reduce speed even further
+            // Reduce speed even further for mud effect
+            newVelocity *= 0.5f;
         }
 
         // Set the new velocity, while maintaining the y-axis velocity (gravity or jumping)
@@ -128,7 +134,6 @@ public class Boulder : MonoBehaviour
 
     private void SpeedBoost(Vector3 direction)
     {
-        
         rb.AddForce(direction * boosterStrength, ForceMode.Impulse);
     }
 
@@ -137,12 +142,18 @@ public class Boulder : MonoBehaviour
         if (other.gameObject.CompareTag("Ice"))
         {
             currentDrag = iceDrag; // Apply ice drag (sliding)
+            FindFirstObjectByType<audioManager>().Play("IceSound");
         }
         else if (other.gameObject.CompareTag("Mud"))
         {
+<<<<<<< Updated upstream
             rb.linearDamping = 3f; // Increase drag for mud
             FindFirstObjectByType<audioManager>().Play("MudSound");
             currentDrag = mudDrag; // Apply mud drag (slow movement)
+=======
+            currentDrag = mudDrag; // Apply mud drag (slow movement)
+            FindFirstObjectByType<audioManager>().Play("MudSound");
+>>>>>>> Stashed changes
         }
     }
 
