@@ -24,6 +24,7 @@ public class Boulder : MonoBehaviour
 
     // Gyro scaling factor for more control over force application
     public float gyroScaling = 0.001f; // Lower scale for better control over force values
+    private float deadZone = 0.1f; // Dead zone to prevent jitter
 
     void Start()
     {
@@ -64,23 +65,20 @@ public class Boulder : MonoBehaviour
     {
         if (cameraTransform == null) return;
 
-        // Gyro tilt data (assuming phone is flat-facing up, adjust axis if needed)
-        // Normalize gyro values to a smaller, more manageable range
-        float tiltX = Mathf.Repeat(-receivedGyro.x, 360f) / 360f * 2f - 1f; 
-        float tiltY = Mathf.Repeat(receivedGyro.y, 360f) / 360f * 2f - 1f; 
+        // Normalize gyro values
+        float tiltX = Mathf.Repeat(-receivedGyro.x, 360f) / 360f * 2f - 1f;
+        float tiltY = Mathf.Repeat(receivedGyro.y, 360f) / 360f * 2f - 1f;
 
-        // Get camera-aligned right and forward directions
-        Vector3 cameraRight = cameraTransform.right;
-        Vector3 cameraForward = cameraTransform.forward;
+        // Apply dead zone to prevent small unwanted movements
+        if (Mathf.Abs(tiltX) < deadZone) tiltX = 0;
+        if (Mathf.Abs(tiltY) < deadZone) tiltY = 0;
 
-        cameraForward.y = 0;
-        cameraForward.Normalize();
-
-        cameraRight.y = 0;
-        cameraRight.Normalize();
+        // Get a stable forward direction for movement (ignoring vertical tilt)
+        Vector3 flatForward = new Vector3(cameraTransform.forward.x, 0, cameraTransform.forward.z).normalized;
+        Vector3 flatRight = new Vector3(cameraTransform.right.x, 0, cameraTransform.right.z).normalized;
 
         // Convert gyro input to world-space movement
-        Vector3 desiredForce = (cameraForward * tiltX + cameraRight * tiltY) * boulderSpeed;
+        Vector3 desiredForce = (flatForward * tiltX + flatRight * tiltY) * boulderSpeed;
 
         // Smooth force transition to avoid jerky movements
         targetForce = Vector3.Lerp(targetForce, desiredForce, tiltSmoothing * Time.deltaTime);
@@ -93,7 +91,6 @@ public class Boulder : MonoBehaviour
         // Apply the force to the ball if it's not zero
         if (targetForce != Vector3.zero)
         {
-            // Limit the maximum speed to prevent too much force
             rb.AddForce(targetForce, ForceMode.Force);
             Debug.Log($"Gyro Force Applied: {targetForce}");
         }
@@ -112,25 +109,25 @@ public class Boulder : MonoBehaviour
         rb.AddForce(direction * boosterStrength, ForceMode.Impulse);
     }
 
-private void OnTriggerEnter(Collider other)
-{
-    if (other.gameObject.CompareTag("Ice"))
+    private void OnTriggerEnter(Collider other)
     {
-        rb.linearDamping = 0.1f; // Reduce drag for sliding effect
+        if (other.gameObject.CompareTag("Ice"))
+        {
+            rb.linearDamping = 0.1f; // Reduce drag for sliding effect
+        }
+        else if (other.gameObject.CompareTag("Mud"))
+        {
+            rb.linearDamping = 3f; // Increase drag for mud
+        }
     }
-    else if (other.gameObject.CompareTag("Mud"))
-    {
-        rb.linearDamping = 5f; // Increase drag for mud
-    }
-}
 
-private void OnTriggerExit(Collider other)
-{
-    if (other.gameObject.CompareTag("Ice") || other.gameObject.CompareTag("Mud"))
+    private void OnTriggerExit(Collider other)
     {
-        rb.linearDamping = normalDrag; // Reset drag when leaving
+        if (other.gameObject.CompareTag("Ice") || other.gameObject.CompareTag("Mud"))
+        {
+            rb.linearDamping = normalDrag; // Reset drag when leaving
+        }
     }
-}
 
     private void OnApplicationQuit()
     {
