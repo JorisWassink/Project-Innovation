@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Boulder.cs" />
     <Compile Include="Assets\Sandboxes\Joris\CollectibleManager.cs" />
     <Compile Include="Assets\Sandboxes\Lucas\Scripts\QuitScript.cs" />
+    <Compile Include="Assets\Sandboxes\Justin\StartScript.cs" />
     <Compile Include="Assets\Sandboxes\Lucas\Scripts\Finish.cs" />
     <Compile Include="Assets\Sandboxes\Lucas\Scripts\ToLevelScript.cs" />
     <Compile Include="Assets\Sandboxes\Lucas\Scripts\ChangeLayout.cs" />
