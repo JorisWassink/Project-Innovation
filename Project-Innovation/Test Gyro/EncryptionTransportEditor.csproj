@@ -1,18 +1,8 @@
-<<<<<<< HEAD
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <LangVersion>9.0</LangVersion>
-    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
-    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
-    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
-=======
 ﻿<Project ToolsVersion="Current">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
     <BaseIntermediateOutputPath>Temp\obj\$(Configuration)\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
->>>>>>> origin/main
   </PropertyGroup>
   <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
@@ -27,11 +17,6 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <RootNamespace></RootNamespace>
-<<<<<<< HEAD
-    <ProjectGuid>{e70cb930-c864-2551-f664-c3ccaaaefa77}</ProjectGuid>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-=======
->>>>>>> origin/main
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>EncryptionTransportEditor</AssemblyName>
@@ -59,15 +44,6 @@
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
-<<<<<<< HEAD
-    <NoConfig>true</NoConfig>
-    <NoStdLib>true</NoStdLib>
-    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
-    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
-    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
-  </PropertyGroup>
-  <ItemGroup>
-=======
     <NoStandardLibraries>true</NoStandardLibraries>
     <NoStdLib>true</NoStdLib>
     <NoConfig>true</NoConfig>
@@ -84,7 +60,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Users\Justin\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
->>>>>>> origin/main
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -570,14 +545,6 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-<<<<<<< HEAD
-    </Reference>
-    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
-=======
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
@@ -591,7 +558,6 @@
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
       <Private>False</Private>
->>>>>>> origin/main
     </Reference>
     <Reference Include="Mono.CecilX">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
@@ -658,12 +624,8 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Cecil">
-<<<<<<< HEAD
-      <HintPath>C:\Users\joris\source\repos\Project Innovation\Project-Innovation\Test Gyro\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll</HintPath>
-=======
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll</HintPath>
       <Private>False</Private>
->>>>>>> origin/main
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -671,10 +633,7 @@
     </Reference>
     <Reference Include="Unity.Android.Gradle">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
-<<<<<<< HEAD
-=======
       <Private>False</Private>
->>>>>>> origin/main
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -1194,41 +1153,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <ProjectReference Include="Mirror.Transports.csproj">
-      <Project>{af5e82f8-5747-0da2-e23b-39c1ef35ba49}</Project>
-      <Name>Mirror.Transports</Name>
-    </ProjectReference>
-    <ProjectReference Include="kcp2k.csproj">
-      <Project>{e8bda9dc-27c7-05f1-5de6-d4d603d1c36d}</Project>
-      <Name>kcp2k</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.csproj">
-      <Project>{fddd1031-c41f-4b38-6d4c-1954af4120d3}</Project>
-      <Name>Mirror</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
-      <Project>{ace9a81d-d7f7-be5b-f6aa-0414a702fb52}</Project>
-      <Name>Mirror.CompilerSymbols</Name>
-    </ProjectReference>
-    <ProjectReference Include="SimpleWebTransport.csproj">
-      <Project>{0a081b80-6158-d5a8-8069-def574c49531}</Project>
-      <Name>SimpleWebTransport</Name>
-    </ProjectReference>
-    <ProjectReference Include="Telepathy.csproj">
-      <Project>{48c88686-19c6-20c2-8109-be51529ce800}</Project>
-      <Name>Telepathy</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
-=======
     <ProjectReference Include="Mirror.Transports.csproj" />
     <ProjectReference Include="kcp2k.csproj" />
     <ProjectReference Include="Mirror.csproj" />
@@ -1248,5 +1172,4 @@
     <ProjectCapability Remove="AssemblyReferences" />
     <ProjectCapability Remove="ReferenceManagerAssemblies" />
   </ItemGroup>
->>>>>>> origin/main
 </Project>
