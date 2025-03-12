@@ -7,7 +7,7 @@ using System.Threading;
 
 public class Boulder : MonoBehaviour
 {
-    [SerializeField] private float boosterStrength = 50f;
+    [SerializeField] private float boosterStrength = 500f;
     [SerializeField] private float boulderSpeed = 5f;
     [SerializeField] private float tiltSmoothing = 5f; // Smooth tilt transitions
     private float normalDrag; // Store default drag
@@ -127,7 +127,8 @@ public class Boulder : MonoBehaviour
 
     private void SpeedBoost(Vector3 direction)
     {
-        rb.AddForce(direction * boosterStrength, ForceMode.Impulse);
+        var forwardDirection = transform.forward;
+        rb.AddForce(forwardDirection * boosterStrength, ForceMode.Impulse);
     }
 
     private void OnTriggerEnter(Collider other)

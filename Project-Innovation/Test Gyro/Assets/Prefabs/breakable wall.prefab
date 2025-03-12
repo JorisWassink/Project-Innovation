@@ -82,6 +82,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3484449483049956871, guid: 550822d0844c48b46a10ddddac4d42f9, type: 3}
   m_PrefabInstance: {fileID: 2086166912367387631}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &3928222132526461670 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3058037568727011593, guid: 550822d0844c48b46a10ddddac4d42f9, type: 3}
+  m_PrefabInstance: {fileID: 2086166912367387631}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2430641256931522531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,5 +209,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 3276991643919764146}
-  breakParticle: {fileID: 0}
+  breakParticle: {fileID: 3928222132526461670}
   breakVelocityThreshold: 5

@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccefc92b-d0eb-4a13-a8f0-a1d1f6980f00" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestingScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestingScene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/breakable wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/breakable wall.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +122,7 @@
       <workItem from="1741684131530" duration="7689000" />
       <workItem from="1741709548412" duration="658000" />
       <workItem from="1741772341981" duration="1924000" />
+      <workItem from="1741792424922" duration="327000" />
     </task>
     <servers />
   </component>
