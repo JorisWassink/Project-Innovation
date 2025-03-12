@@ -17,7 +17,7 @@ public class BreakableWall : MonoBehaviour
             {
                 StartCoroutine(Break());
                 Debug.Log($"Wall broke due to vertical speed of {verticalSpeed}");
-                FindObjectOfType<audioManager>().Play("breakWall");
+                FindFirstObjectByType<audioManager>().Play("breakWall");
             }
             else
             {
