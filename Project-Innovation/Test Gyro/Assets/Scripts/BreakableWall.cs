@@ -12,7 +12,7 @@ public class BreakableWall : MonoBehaviour
         Rigidbody rb = other.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            float verticalSpeed = Mathf.Abs(rb.linearVelocity.x); // Alleen de wereldruimte verticale snelheid
+            float verticalSpeed = Mathf.Abs(rb.linearVelocity.x) + Mathf.Abs(rb.linearVelocity.z); // Alleen de wereldruimte verticale snelheid
             if (verticalSpeed >= breakVelocityThreshold)
             {
                 StartCoroutine(Break());

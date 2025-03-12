@@ -127,8 +127,7 @@ public class Boulder : MonoBehaviour
 
     private void SpeedBoost(Vector3 direction)
     {
-        var forwardDirection = transform.forward;
-        rb.AddForce(forwardDirection * boosterStrength, ForceMode.Impulse);
+        rb.AddForce(direction * boosterStrength, ForceMode.Impulse);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -145,7 +144,7 @@ public class Boulder : MonoBehaviour
         }
         if (other.gameObject.CompareTag("SpeedBooster"))
         {
-            SpeedBoost(other.transform.forward);
+            SpeedBoost(this.transform.forward);
             FindFirstObjectByType<audioManager>().Play("speedBoost");
         }
     }
