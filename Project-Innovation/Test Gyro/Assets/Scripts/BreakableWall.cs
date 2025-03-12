@@ -7,9 +7,9 @@ public class BreakableWall : MonoBehaviour
     [SerializeField] private ParticleSystem breakParticle;
     [SerializeField] private float breakVelocityThreshold = 5f; // Pas de drempel aan indien nodig
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        Rigidbody rb = other.GetComponent<Rigidbody>();
+        Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
         if (rb != null)
         {
             float verticalSpeed = Mathf.Abs(rb.linearVelocity.x) + Mathf.Abs(rb.linearVelocity.z); // Alleen de wereldruimte verticale snelheid
