@@ -3512,10 +3512,17 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< Updated upstream
     scrollPos: {x: 0, y: 746}
     m_SelectedIDs: 24e70000
     m_LastClickedID: 59172
     m_ExpandedIDs: 000000003ac60000
+=======
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: e0ba0000
+    m_LastClickedID: 47840
+    m_ExpandedIDs: 00000000eeda0000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3544,7 +3551,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
     m_ExpandedIDs: 000000003ac60000
+=======
+    m_ExpandedIDs: 00000000eeda0000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4212,9 +4223,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
+<<<<<<< Updated upstream
     m_Target: {x: 2.5209846, y: 3.2871637, z: -4.0974307}
     speed: 2
     m_Value: {x: 2.5209846, y: 3.2871637, z: -4.0974307}
+=======
+    m_Target: {x: -29.17023, y: -35.73983, z: -29.975811}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -4260,11 +4277,19 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< Updated upstream
     m_Target: {x: -0.4096582, y: -0.44293022, z: 0.23842807, w: -0.76103526}
     speed: 2
     m_Value: {x: 0.4096582, y: 0.44293022, z: -0.23842807, w: 0.76103526}
   m_Size:
     m_Target: 7.190286
+=======
+    m_Target: {x: -0.025828391, y: 0.90961105, z: -0.4108068, w: -0.05714277}
+    speed: 2
+    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_Size:
+    m_Target: 29.63861
+>>>>>>> Stashed changes
     speed: 2
     m_Value: 7.190286
   m_Ortho:

@@ -26,10 +26,15 @@ public class Boulder : MonoBehaviour
     public float gyroScaling = 0.001f; // Lower scale for better control over force values
     private float deadZone = 0.1f; // Dead zone to prevent jitter
 
+    private float iceDrag = 0.1f; // Drag value for ice
+    private float mudDrag = 3f; // Drag value for mud
+    private float currentDrag;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         normalDrag = rb.linearDamping; // Save initial drag value
+        currentDrag = normalDrag; // Start with default drag
 
         // Start UDP listener for gyro data
         udpClient = new UdpClient(port);
@@ -88,12 +93,25 @@ public class Boulder : MonoBehaviour
     {
         if (rb == null) return;
 
-        // Apply the force to the ball if it's not zero
-        if (targetForce != Vector3.zero)
+        // Apply the velocity directly, including the effects of ice or mud
+        Vector3 newVelocity = targetForce;
+
+        // If the object is on ice, apply sliding drag (reduce drag)
+        if (currentDrag == iceDrag)
         {
-            rb.AddForce(targetForce, ForceMode.Force);
-            Debug.Log($"Gyro Force Applied: {targetForce}");
+            newVelocity *= 1f / (1f + Time.deltaTime * 5f); // Reduced friction sliding effect
         }
+        // If the object is in mud, apply extra drag (slow down)
+        else if (currentDrag == mudDrag)
+        {
+            newVelocity *= 0.5f; // Reduce speed even further
+        }
+
+        // Set the new velocity, while maintaining the y-axis velocity (gravity or jumping)
+        newVelocity.y = rb.linearVelocity.y;
+        rb.linearVelocity = newVelocity;
+
+        Debug.Log($"Gyro Force Applied: {newVelocity}");
     }
 
     private void OnCollisionEnter(Collision other)
@@ -113,11 +131,11 @@ public class Boulder : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ice"))
         {
-            rb.linearDamping = 0.1f; // Reduce drag for sliding effect
+            currentDrag = iceDrag; // Apply ice drag (sliding)
         }
         else if (other.gameObject.CompareTag("Mud"))
         {
-            rb.linearDamping = 3f; // Increase drag for mud
+            currentDrag = mudDrag; // Apply mud drag (slow movement)
         }
     }
 
@@ -125,7 +143,7 @@ public class Boulder : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ice") || other.gameObject.CompareTag("Mud"))
         {
-            rb.linearDamping = normalDrag; // Reset drag when leaving
+            currentDrag = normalDrag; // Reset drag when leaving
         }
     }
 
