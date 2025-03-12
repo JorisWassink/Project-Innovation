@@ -11,6 +11,7 @@ public class IceZone : MonoBehaviour {
             originalDrag = rb.linearDamping;
             rb.linearDamping = iceDrag; // Set drag for ice
             rb.angularDamping = 0;
+            FindFirstObjectByType<audioManager>().Play("iceIceBaby");
         }
     }
 

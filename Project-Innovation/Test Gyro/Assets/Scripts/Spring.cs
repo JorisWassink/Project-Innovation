@@ -17,6 +17,7 @@ public class Spring : MonoBehaviour
             Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
+                FindObjectOfType<audioManager>().Play("jumpPlant");
                 rb.linearVelocity = new Vector3(rb.linearVelocity.x, bounceForce, rb.linearVelocity.z);
                 animator.SetTrigger("Bounce");
                 Debug.Log("Boulder bounced!");

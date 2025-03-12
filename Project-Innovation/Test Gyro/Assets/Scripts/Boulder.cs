@@ -93,6 +93,7 @@ public class Boulder : MonoBehaviour
         {
             rb.AddForce(targetForce, ForceMode.Force);
             Debug.Log($"Gyro Force Applied: {targetForce}");
+            FindFirstObjectByType<audioManager>().Play("playerMovement");
         }
     }
 
@@ -101,11 +102,13 @@ public class Boulder : MonoBehaviour
         if (other.gameObject.CompareTag("SpeedBooster"))
         {
             SpeedBoost(other.transform.forward);
+            FindFirstObjectByType<audioManager>().Play("speedBoost");
         }
     }
 
     private void SpeedBoost(Vector3 direction)
     {
+        
         rb.AddForce(direction * boosterStrength, ForceMode.Impulse);
     }
 
@@ -118,6 +121,7 @@ public class Boulder : MonoBehaviour
         else if (other.gameObject.CompareTag("Mud"))
         {
             rb.linearDamping = 3f; // Increase drag for mud
+            FindFirstObjectByType<audioManager>().Play("MudSound");
         }
     }
 
