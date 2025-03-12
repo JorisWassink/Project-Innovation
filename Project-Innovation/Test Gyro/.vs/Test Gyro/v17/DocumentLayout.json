@@ -1,10 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\David\\OneDrive\\Bureaublad\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\",
+  "WorkspaceRootPath": "C:\\Users\\David\\Saxion\\Project Innovation\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}|Assembly-CSharp.csproj|c:\\users\\david\\onedrive\\bureaublad\\new folder\\project-innovation\\project-innovation\\test gyro\\assets\\rendering\\shaders\\newsurfaceshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}|Assembly-CSharp.csproj|solutionrelative:assets\\rendering\\shaders\\newsurfaceshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}|Assembly-CSharp.csproj|c:\\users\\david\\saxion\\project innovation\\new folder\\project-innovation\\project-innovation\\test gyro\\assets\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84CF7E6B-82E2-5EF7-A33E-36269D0E4F46}|Assembly-CSharp.csproj|solutionrelative:assets\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\David\\OneDrive\\Bureaublad\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\Assets\\Rendering\\shaders\\NewSurfaceShader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,19 +22,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NewSurfaceShader.shader",
-              "DocumentMoniker": "C:\\Users\\David\\OneDrive\\Bureaublad\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\Assets\\Rendering\\shaders\\NewSurfaceShader.shader",
-              "RelativeDocumentMoniker": "Assets\\Rendering\\shaders\\NewSurfaceShader.shader",
-              "ToolTip": "C:\\Users\\David\\OneDrive\\Bureaublad\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\Assets\\Rendering\\shaders\\NewSurfaceShader.shader",
-              "RelativeToolTip": "Assets\\Rendering\\shaders\\NewSurfaceShader.shader",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-03-03T14:44:15.958Z",
+              "Title": "audioManager.cs",
+              "DocumentMoniker": "C:\\Users\\David\\Saxion\\Project Innovation\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\Assets\\audioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\audioManager.cs",
+              "ToolTip": "C:\\Users\\David\\Saxion\\Project Innovation\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\Assets\\audioManager.cs",
+              "RelativeToolTip": "Assets\\audioManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T10:50:06.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NewSurfaceShader.shader",
+              "DocumentMoniker": "C:\\Users\\David\\OneDrive\\Bureaublad\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\Assets\\Rendering\\shaders\\NewSurfaceShader.shader",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\OneDrive\\Bureaublad\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\Assets\\Rendering\\shaders\\NewSurfaceShader.shader",
+              "ToolTip": "C:\\Users\\David\\OneDrive\\Bureaublad\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\Assets\\Rendering\\shaders\\NewSurfaceShader.shader",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\OneDrive\\Bureaublad\\New folder\\Project-Innovation\\Project-Innovation\\Test Gyro\\Assets\\Rendering\\shaders\\NewSurfaceShader.shader",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-03-03T14:44:15.958Z"
             }
           ]
         }
