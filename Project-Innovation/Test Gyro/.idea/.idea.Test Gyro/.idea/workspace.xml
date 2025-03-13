@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccefc92b-d0eb-4a13-a8f0-a1d1f6980f00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ArtifactScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArtifactScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HUD.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandboxes/Joris/SHOWG SDF 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandboxes/Joris/SHOWG SDF 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/FollowGoalScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/FollowGoalScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestingScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestingScene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boulder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boulder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BreakableWall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BreakableWall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +39,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Sandboxes/Justin/TiltScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/AimArrow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/ChangeLayout.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/FollowGoalScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/FollowGoalScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Boulder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BreakableWall.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spring.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/audioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@0b68ece7aa54/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
@@ -123,7 +132,8 @@
       <workItem from="1741684131530" duration="7689000" />
       <workItem from="1741709548412" duration="658000" />
       <workItem from="1741772341981" duration="1924000" />
-      <workItem from="1741792424922" duration="1052000" />
+      <workItem from="1741792424922" duration="1900000" />
+      <workItem from="1741852662009" duration="4041000" />
     </task>
     <servers />
   </component>

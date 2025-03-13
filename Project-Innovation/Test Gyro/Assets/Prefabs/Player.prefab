@@ -2095,7 +2095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 591babe9c321a7b44a62e1cf486f90ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boosterStrength: 451.9
+  boosterStrength: 2
   boulderSpeed: 5
   tiltSmoothing: 5
   cameraTransform: {fileID: 0}

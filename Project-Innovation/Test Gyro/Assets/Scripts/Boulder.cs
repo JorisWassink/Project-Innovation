@@ -29,6 +29,7 @@ public class Boulder : MonoBehaviour
     private float iceDrag = 0.1f; // Drag value for ice
     private float mudDrag = 3f; // Drag value for mud
     private float currentDrag;
+    private float boosterForce = 1;
 
     void Start()
     {
@@ -83,10 +84,17 @@ public class Boulder : MonoBehaviour
         Vector3 flatRight = new Vector3(cameraTransform.right.x, 0, cameraTransform.right.z).normalized;
 
         // Convert gyro input to world-space movement
+        
+        boulderSpeed *= boosterForce;
+        if (boosterForce > 1)
+            boosterForce -= .1f;
+        
         Vector3 desiredForce = (flatForward * tiltX + flatRight * tiltY) * boulderSpeed;
 
         // Smooth force transition to avoid jerky movements
         targetForce = Vector3.Lerp(targetForce, desiredForce, tiltSmoothing * Time.deltaTime);
+        targetForce.z += 100000;
+
     }
 
     private void FixedUpdate()
@@ -111,23 +119,22 @@ public class Boulder : MonoBehaviour
 
         // Set the new velocity, while maintaining the y-axis velocity (gravity or jumping)
         newVelocity.y = rb.linearVelocity.y; // Retain the vertical velocity (gravity)
+
         rb.linearVelocity = newVelocity;
-
-        Debug.Log($"Gyro Force Applied: {newVelocity}");
+        
+        
+        
+        
+//        Debug.Log($"Gyro Force Applied: {rb.linearVelocity}");
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("SpeedBooster"))
-        {
-            SpeedBoost(other.transform.forward);
-            FindFirstObjectByType<audioManager>().Play("speedBoost");
-        }
-    }
+
 
     private void SpeedBoost(Vector3 direction)
     {
-        rb.AddForce(direction * boosterStrength, ForceMode.Impulse);
+        //rb.linearVelocity += direction * boosterStrength;
+        boosterForce = boosterStrength;
+        Debug.Log(boosterForce);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -144,7 +151,7 @@ public class Boulder : MonoBehaviour
         }
         if (other.gameObject.CompareTag("SpeedBooster"))
         {
-            SpeedBoost(this.transform.forward);
+            SpeedBoost(rb.linearVelocity.normalized);
             FindFirstObjectByType<audioManager>().Play("speedBoost");
         }
     }

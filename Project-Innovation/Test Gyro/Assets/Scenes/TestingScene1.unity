@@ -61753,6 +61753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1421886145}
+  smoothSpeed: 5
 --- !u!1 &1147098125
 GameObject:
   m_ObjectHideFlags: 0
@@ -113719,15 +113720,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2197896385056332822, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.17
+      value: -33.96
       objectReference: {fileID: 0}
     - target: {fileID: 2197896385056332822, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4877048
+      value: -4.54
       objectReference: {fileID: 0}
     - target: {fileID: 2197896385056332822, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: -10.55
       objectReference: {fileID: 0}
     - target: {fileID: 2197896385056332822, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -113759,7 +113760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: boulderSpeed
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: tiltSmoothing
