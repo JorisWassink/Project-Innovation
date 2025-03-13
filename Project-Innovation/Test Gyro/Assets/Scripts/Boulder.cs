@@ -30,9 +30,11 @@ public class Boulder : MonoBehaviour
     private float mudDrag = 3f; // Drag value for mud
     private float currentDrag;
     private float boosterForce = 1;
+    private float baseSpeed;
 
     void Start()
     {
+        baseSpeed = boulderSpeed;
         rb = GetComponent<Rigidbody>();
         normalDrag = rb.linearDamping; // Save initial drag value
         currentDrag = normalDrag; // Start with default drag
@@ -86,15 +88,20 @@ public class Boulder : MonoBehaviour
         // Convert gyro input to world-space movement
         
         boulderSpeed *= boosterForce;
+
         if (boosterForce > 1)
-            boosterForce -= .1f;
+        {
+            boosterForce -= 0.1f;
+        }
+
+// Laat de snelheid langzaam terugkeren naar een basiswaarde
+        boulderSpeed = Mathf.Lerp(boulderSpeed, baseSpeed, Time.deltaTime * 2f);
+
         
         Vector3 desiredForce = (flatForward * tiltX + flatRight * tiltY) * boulderSpeed;
 
         // Smooth force transition to avoid jerky movements
         targetForce = Vector3.Lerp(targetForce, desiredForce, tiltSmoothing * Time.deltaTime);
-        targetForce.z += 100000;
-
     }
 
     private void FixedUpdate()
@@ -125,7 +132,7 @@ public class Boulder : MonoBehaviour
         
         
         
-//        Debug.Log($"Gyro Force Applied: {rb.linearVelocity}");
+        Debug.Log($"Gyro Force Applied: {newVelocity}");
     }
 
 
@@ -152,7 +159,7 @@ public class Boulder : MonoBehaviour
         if (other.gameObject.CompareTag("SpeedBooster"))
         {
             SpeedBoost(rb.linearVelocity.normalized);
-            FindFirstObjectByType<audioManager>().Play("speedBoost");
+//            FindFirstObjectByType<audioManager>().Play("speedBoost");
         }
     }
 

@@ -392,8 +392,8 @@ Transform:
   m_GameObject: {fileID: 441448228}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0647534, y: -0, z: -0, w: 0.9979013}
-  m_LocalPosition: {x: -0.3416, y: -2.17, z: 3.45}
-  m_LocalScale: {x: 11.561386, y: 1, z: 15.4389}
+  m_LocalPosition: {x: -4.7993, y: -1.4449, z: -2.1138}
+  m_LocalScale: {x: 20.476372, y: 1, z: 26.659891}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -665,6 +665,7 @@ GameObject:
   - component: {fileID: 664151110}
   - component: {fileID: 664151113}
   - component: {fileID: 664151114}
+  - component: {fileID: 664151115}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -740,7 +741,7 @@ Transform:
   m_GameObject: {fileID: 664151109}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071069}
-  m_LocalPosition: {x: -7.93, y: 1, z: 0.6699993}
+  m_LocalPosition: {x: -1.32, y: 9.12, z: -10.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -797,13 +798,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664151109}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b9b1620a022bd843bc9e10a797013d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ballTransform: {fileID: 649833679}
   offset: {x: 0, y: 4, z: 0}
+  smoothSpeed: 5
+--- !u!114 &664151115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664151109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 043502067766c654aa548341d55e24ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1966369203}
   smoothSpeed: 5
 --- !u!1001 &741822751
 PrefabInstance:
@@ -1317,15 +1332,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 70830060477262645, guid: 9287b06aaa7bd2847914d5b2c9398d63, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.068172455
+      value: -7.39
       objectReference: {fileID: 0}
     - target: {fileID: 70830060477262645, guid: 9287b06aaa7bd2847914d5b2c9398d63, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.99
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 70830060477262645, guid: 9287b06aaa7bd2847914d5b2c9398d63, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15
+      value: -6.2
       objectReference: {fileID: 0}
     - target: {fileID: 70830060477262645, guid: 9287b06aaa7bd2847914d5b2c9398d63, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1467,6 +1482,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
+      propertyPath: boulderSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
+      propertyPath: boosterStrength
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 664151112}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
