@@ -8,6 +8,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float smoothSpeed = 0.125f;
     private Vector3 offset;
 
+    [SerializeField] private float x;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,8 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        
+        offset.x = 0;
+        offset.z = x;
         var ballTransform = player.transform;
         Vector3 desiredPosition = ballTransform.position + offset;
 
@@ -25,11 +28,13 @@ public class CameraController : MonoBehaviour
 
         Vector3 direction = (desiredPosition - ballTransform.position).normalized;
         float distance = offset.magnitude;
-        
-        
-        if (Physics.Raycast(ballTransform.position, direction, out RaycastHit hit, distance)) {
-            desiredPosition = ballTransform.position + direction * (hit.distance - wallOffset);
+
+        if (Physics.Raycast(ballTransform.position, direction, out RaycastHit hit, distance))
+        {
+                if (hit.transform.gameObject.CompareTag("OuterWalls"))
+                    desiredPosition = ballTransform.position + direction * (hit.distance - wallOffset);
         }
+
         
         transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
         

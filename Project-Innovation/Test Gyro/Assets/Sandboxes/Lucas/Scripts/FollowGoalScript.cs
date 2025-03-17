@@ -47,7 +47,7 @@ public class FollowGoalScipt : MonoBehaviour
 
     private void GoalReached(GameObject diamond, GameObject goal)
     {
-        diamond.gameObject.SetActive(false);
+//        diamond.gameObject.SetActive(false);
         Arrow.GetComponent<Renderer>().enabled = false;
         aimarrow.SetTimer();
         diamond.SetActive(true);

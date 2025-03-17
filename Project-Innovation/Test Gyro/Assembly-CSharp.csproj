@@ -49,6 +49,7 @@
     <Compile Include="Assets\PlayerAnimator.cs" />
     <Compile Include="Assets\Scripts\Cannon.cs" />
     <Compile Include="Assets\Scripts\GyroReciever.cs" />
+    <Compile Include="Assets\Scripts\Boulder1.cs" />
     <Compile Include="Assets\Sandboxes\Joris\Collectible.cs" />
     <Compile Include="Assets\Audio.cs" />
     <Compile Include="Assets\Sandboxes\Lucas\Scripts\Damage.cs" />

@@ -62,6 +62,9 @@ public class AimArrow : MonoBehaviour
             lookRotation *= offsetRotation;
 
             // Rotate the arrowPivot to face the target with the offset
+            
+            arrowPivot.position = transform.parent.position + lookRotation * Vector3.up;
+            
             arrowPivot.rotation = Quaternion.Slerp(arrowPivot.rotation, lookRotation, Time.deltaTime * rotationSpeed);
         }
     }
