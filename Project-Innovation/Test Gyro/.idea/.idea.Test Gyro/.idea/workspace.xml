@@ -6,22 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ccefc92b-d0eb-4a13-a8f0-a1d1f6980f00" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test Gyro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/breakable wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/breakable wall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sandboxes/Joris/SHOWG SDF 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandboxes/Joris/SHOWG SDF 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sandboxes/Joris/Scenes/animatingscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandboxes/Joris/Scenes/animatingscene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/AimArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/AimArrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/FollowGoalScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sandboxes/Lucas/Scripts/FollowGoalScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestingScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestingScene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/.NETFramework,Version=v4.7.1.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/.NETFramework,Version=v4.7.1.AssemblyAttributes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.CompilerSymbols.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.CompilerSymbols.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.Editor.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.Editor.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.Transports.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.Transports.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Mirror.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Mirror.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Unity.Mirror.CodeGen.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Unity.Mirror.CodeGen.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Telepathy.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Telepathy.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +25,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d851e39d164043519e84d650683ea1592ac00/49/8936f3ef/Physics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d851e39d164043519e84d650683ea1592ac00/92/6a8efb05/PhysicsScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ArtifactScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Chunk.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ChunkLoader.cs" root0="FORCE_HIGHLIGHTING" />
@@ -141,6 +136,8 @@
       <workItem from="1741792424922" duration="1900000" />
       <workItem from="1741852662009" duration="6046000" />
       <workItem from="1742215117691" duration="5696000" />
+      <workItem from="1742308529283" duration="532000" />
+      <workItem from="1742309860161" duration="364000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour
 {
     public GameObject player;
     [SerializeField] private float smoothSpeed = 0.125f;
+    [SerializeField] private LayerMask wallMask;
     private Vector3 offset;
 
     [SerializeField] private float x;
@@ -29,10 +30,16 @@ public class CameraController : MonoBehaviour
         Vector3 direction = (desiredPosition - ballTransform.position).normalized;
         float distance = offset.magnitude;
 
-        if (Physics.Raycast(ballTransform.position, direction, out RaycastHit hit, distance))
+        if (Physics.Raycast(ballTransform.position, direction, out RaycastHit hit, distance, wallMask))
         {
-                if (hit.transform.gameObject.CompareTag("OuterWalls"))
-                    desiredPosition = ballTransform.position + direction * (hit.distance - wallOffset);
+            var oldy = transform.position.y;
+            desiredPosition = ballTransform.position + direction * (hit.distance - wallOffset);
+            desiredPosition.y = oldy;
+        }
+        
+        if (Physics.Raycast(ballTransform.position, Vector3.up, out RaycastHit hit2, distance))
+        {
+            desiredPosition.y = (ballTransform.position + direction * (hit2.distance - wallOffset)).y;
         }
 
         
