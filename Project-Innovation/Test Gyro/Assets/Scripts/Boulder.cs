@@ -24,7 +24,7 @@ public class Boulder : MonoBehaviour
 
     // Gyro scaling factor for more control over force application
     public float gyroScaling = 0.001f; // Lower scale for better control over force values
-    private float deadZone = 0.1f; // Dead zone to prevent jitter
+    private float deadZone = 0f; // Dead zone to prevent jitter
 
     private float iceDrag = 0.1f; // Drag value for ice
     private float mudDrag = 3f; // Drag value for mud
@@ -77,10 +77,6 @@ public class Boulder : MonoBehaviour
         float tiltX = Mathf.Repeat(-receivedGyro.x, 360f) / 360f * 2f - 1f;
         float tiltY = Mathf.Repeat(receivedGyro.y, 360f) / 360f * 2f - 1f;
 
-        // Apply dead zone to prevent small unwanted movements
-        if (Mathf.Abs(tiltX) < deadZone) tiltX = 0;
-        if (Mathf.Abs(tiltY) < deadZone) tiltY = 0;
-
         // Get a stable forward direction for movement (ignoring vertical tilt)
         Vector3 flatForward = new Vector3(cameraTransform.forward.x, 0, cameraTransform.forward.z).normalized;
         Vector3 flatRight = new Vector3(cameraTransform.right.x, 0, cameraTransform.right.z).normalized;
@@ -93,8 +89,6 @@ public class Boulder : MonoBehaviour
         {
             boosterForce -= 0.1f;
         }
-
-// Laat de snelheid langzaam terugkeren naar een basiswaarde
         boulderSpeed = Mathf.Lerp(boulderSpeed, baseSpeed, Time.deltaTime * 2f);
 
         
