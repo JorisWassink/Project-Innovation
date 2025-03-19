@@ -5043,7 +5043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 94692098}
   - component: {fileID: 94692099}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 1 (2)
   m_TagString: OuterWalls
   m_Icon: {fileID: 0}
@@ -48441,7 +48441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 876698076}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: outerWallCollidera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63674,7 +63674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 614217292}
-  smoothSpeed: 10
+  smoothSpeed: 20
   wallMask:
     serializedVersion: 2
     m_Bits: 64
@@ -78595,7 +78595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1368054718}
   - component: {fileID: 1368054719}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 1 (4)
   m_TagString: OuterWalls
   m_Icon: {fileID: 0}
@@ -81970,7 +81970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1425877743}
   - component: {fileID: 1425877744}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 1 (3)
   m_TagString: OuterWalls
   m_Icon: {fileID: 0}
@@ -101374,7 +101374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783377452}
   - component: {fileID: 1783377453}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 1 (1)
   m_TagString: OuterWalls
   m_Icon: {fileID: 0}
