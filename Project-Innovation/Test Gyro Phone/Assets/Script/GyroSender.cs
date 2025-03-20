@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -11,6 +12,7 @@ public class GyroSender : MonoBehaviour
 
     private Quaternion initialRotation;
     private bool gyroEnabled = false;
+    public Text GyroText; // Reference to UI Text component
 
     void Start()
     {
@@ -35,6 +37,11 @@ public class GyroSender : MonoBehaviour
         Quaternion rawGyro = GyroToUnity(Input.gyro.attitude);
         Quaternion relativeRotation = Quaternion.Inverse(initialRotation) * rawGyro;
         Vector3 gyroEuler = relativeRotation.eulerAngles;
+
+        if (GyroText != null)
+        {
+            GyroText.text = $"Gyro X: {gyroEuler.x:F2}\nGyro Y: {gyroEuler.y:F2}\nGyro Z: {gyroEuler.z:F2}";
+        }
 
         // Send gyro data as a string
         string message = $"{gyroEuler.x},{gyroEuler.y},{gyroEuler.z}";

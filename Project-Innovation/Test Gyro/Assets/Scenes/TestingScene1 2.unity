@@ -117501,6 +117501,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 523647055009467575, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 523647055009467575, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: boosterStrength
       value: 1.4
       objectReference: {fileID: 0}
@@ -117581,12 +117585,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: boulderSpeed
-      value: 1.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: tiltSmoothing
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
+      propertyPath: boosterStrength
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5291083175556256324, guid: e01dbbd2faa7a754f9552ae853e36c4c, type: 3}
       propertyPath: cameraTransform
