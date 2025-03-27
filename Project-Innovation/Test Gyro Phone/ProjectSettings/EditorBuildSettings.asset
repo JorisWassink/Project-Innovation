@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Sandboxes/Joris/SampleScene.unity
     guid: 7a47baf8871e2bf4ab0ec6ee86918b8f
+  - enabled: 1
+    path: Assets/Sandboxes/Justin/Ball Test Scene.unity
+    guid: 37c08d29bee73cd4c864973e44d90bf3
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 53103d44dd94d1b41bf37134bddffa44, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: cf55ec9b73ca9554cbf86c4dd3c4519c, type: 2}

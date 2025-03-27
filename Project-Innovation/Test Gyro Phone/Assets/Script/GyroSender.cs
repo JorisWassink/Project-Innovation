@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using UnityEngine.InputSystem;
+using TMPro;
 
 public class GyroSender : MonoBehaviour
 {
@@ -12,27 +14,23 @@ public class GyroSender : MonoBehaviour
 
     private Quaternion initialRotation;
     private bool gyroEnabled = false;
-    public Text GyroText; // Reference to UI Text component
+    public TMP_Text GyroText; // Reference to UI Text component
 
     void Start()
     {
         udpClient = new UdpClient();
-        if (SystemInfo.supportsGyroscope)
-        {
-            Input.gyro.enabled = true;
-            initialRotation = Input.gyro.attitude;
-            gyroEnabled = true;
-        }
-        else
-        {
-            Debug.LogError("Gyroscope not supported on this device!");
-        }
+        Input.gyro.enabled = true;
+        initialRotation = Input.gyro.attitude;
+        gyroEnabled = true;
+    }
+
+    private void OnEnable()
+    {
+        InputSystem.EnableDevice(UnityEngine.InputSystem.Gyroscope.current);
     }
 
     void Update()
     {
-        if (!gyroEnabled) return;
-
         // Get gyro rotation relative to the initial state
         Quaternion rawGyro = GyroToUnity(Input.gyro.attitude);
         Quaternion relativeRotation = Quaternion.Inverse(initialRotation) * rawGyro;
@@ -40,7 +38,10 @@ public class GyroSender : MonoBehaviour
 
         if (GyroText != null)
         {
-            GyroText.text = $"Gyro X: {gyroEuler.x:F2}\nGyro Y: {gyroEuler.y:F2}\nGyro Z: {gyroEuler.z:F2}";
+            GyroText.text = $"Gyro X: {gyroEuler.x:F2} Gyro Y: {gyroEuler.y:F2} Gyro Z: {gyroEuler.z:F2}";
+        }
+        else if(GyroText == null){
+            GyroText.text = "No Gyro";
         }
 
         // Send gyro data as a string

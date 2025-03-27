@@ -9,9 +9,6 @@ public class DebugScript : MonoBehaviour
     {
         textMesh = GetComponent<TMPro.TextMeshProUGUI>();
         Input.gyro.enabled = true; // Enable the gyroscope if it's supported
-        
-        
-
     }
     
     private void OnEnable()
