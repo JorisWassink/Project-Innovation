@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class FollowGoalScipt : MonoBehaviour
@@ -38,6 +39,7 @@ public class FollowGoalScipt : MonoBehaviour
            case "Goal 3":
                GoalReached(diamond4, other.gameObject);
                goal4hit = true;
+               Win();
                break;
            case "Button":
                changelayoutscript.LayoutChanged();
@@ -47,10 +49,14 @@ public class FollowGoalScipt : MonoBehaviour
 
     private void GoalReached(GameObject diamond, GameObject goal)
     {
-//        diamond.gameObject.SetActive(false);
         Arrow.GetComponent<Renderer>().enabled = false;
         aimarrow.SetTimer();
         diamond.SetActive(true);
         Destroy(goal);
+    }
+
+    private void Win()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

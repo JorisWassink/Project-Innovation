@@ -8,9 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestingScene1.unity
     guid: ccb311b83c8ba9e4c9254b7c14e2501a
+  - enabled: 1
+    path: Assets/Sandboxes/Justin/StartMenu.unity
+    guid: 3731ecd6bf859c84bb2f2a29aa5161e1
+  - enabled: 1
+    path: Assets/Scenes/TestingScene1 1.unity
+    guid: e4a46a41875a8a342ad78d40a98429e3
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: f388815f38f8b4d4ca1e9db278abc3de
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
